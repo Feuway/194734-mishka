@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Вязание на заказ.Мишка</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="main-header__wrap">
+        <div class="main-header__logo">
+          <a href="index.html">
+            <img src="http://placehold.it/90x40" alt="Мишка">
+          </a>
+        </div>
+        <nav class="main-nav  main-nav--closed">
+          <a class="main-nav__toggle" type="button">Открыть меню</a>
+          <div class="main-nav__wrap">
+            <ul class="main-nav__list">
+                <li class="main-nav__list-item">
+                  <a href="catalog.html">Каталог товаров</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="form.html">Вязание на заказ</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="#">Поиск по сайту</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a href="#">Корзина:
+                  <span>пока пуста</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="description-page">
+        <h1 class="description-page__title">Вязание на заказ</h1>
+      </section>
+      <section class="order-form">
+        <div class="order-form__wrap">
+          <p class="order-form__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+          <form class="order" action="post">
+            <fieldset class="order__type  filter">
+              <legend class="order__title">Тип</legend>
+              <input type="radio" name="accessory" id="accessory" checked>
+              <label for="accessory">Аксессуар для интерьера</label>
+              <input type="radio" name="toy" id="toy">
+              <label for="toy">Детская игрушка</label>
+            </fieldset>
+            <fieldset class="order__color  filter">
+              <legend class="order__title">Цвет</legend>
+              <input type="checkbox" name="white" id="white" checked>
+              <label for="white">Белый</label>
+              <input type="checkbox" name="grey" id="grey" checked>
+              <label for="grey">Серый</label>
+              <input type="checkbox" name="tiffany" id="tiffany">
+              <label for="tiffany">&#171;Тиффани&#187;</label>
+              <input type="checkbox" name="black" id="black">
+              <label for="black">Черный</label>
+              <input type="checkbox" name="pink" id="pink">
+              <label for="pink">Розовый</label>
+              <input type="checkbox" name="orange" id="orange">
+              <label for="orange">Оранжевый</label>
+            </fieldset>
+            <fieldset class="order__name">
+              <legend class="order__title">ФИО</legend>
+              <label for="surname">Фамилия:</label>
+              <input type="text" name="surname" id="surname" placeholder="Укажите фамлию">
+              <label for="name">Имя:</label>
+              <input type="text" name="name" id="name" placeholder="Введите ваше имя">
+              <label for="middle-name">Отчество:</label>
+              <input type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+            </fieldset>
+            <fieldset class="order__phone-number">
+              <legend class="order__title">Тел</legend>
+              <input type="tel" name="tel" placeholder="+7 XXX XX XX">
+            </fieldset>
+            <fieldset class="order__email">
+              <legend class="order__title">E-mail</legend>
+              <input type="email" name="email" placeholder="Ваш e-mail">
+            </fieldset>
+            <fieldset class="order__additionally">
+              <legend class="order__title">Доп</legend>
+              <textarea name="add" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
+            <fieldset class="order__submit">
+              <input type="submit" class="order__btn  btn" value="Отправить заказ">
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrap">
+        <section class="social">
+          <a href="#" class="social__btn  social__btn--inst"></a>
+          <a href="#" class="social__btn  social__btn--fb"></a>
+          <a href="#" class="social__btn  social__btn--tw"></a>
+          <section class="developed">
+            <p>Разработано</p>
+            <a class=".developed__logo" href=""></a>
+          </section>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
