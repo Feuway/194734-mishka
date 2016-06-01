@@ -7,38 +7,32 @@
   <body>
     <header class="main-header">
       <div class="main-header__wrap">
-        <div class="main-header__logo">
-          <a href="index.html">
-            <img src="http://placehold.it/90x40" alt="Мишка">
-          </a>
-        </div>
+        <a class="logo" href="index.html">
+          <img src="http://placehold.it/90x40" alt="Мишка">
+        </a>
         <nav class="main-nav  main-nav--closed">
-          <a class="main-nav__toggle" type="button">Открыть меню</a>
-          <div class="main-nav__wrap">
-            <ul class="main-nav__list">
-                <li class="main-nav__list-item">
-                  <a href="catalog.html">Каталог товаров</a>
-              </li>
-              <li class="main-nav__list-item">
-                <a href="form.html">Вязание на заказ</a>
-              </li>
-              <li class="main-nav__list-item">
-                <a href="#">Поиск по сайту</a>
-              </li>
-              <li class="main-nav__list-item">
-                <a href="#">Корзина:
-                  <span>пока пуста</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
+              <li class="main-nav__list-item  main-nav__list-item--active">
+                <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="#">Корзина:
+                <span>пока пуста</span>
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
     <main>
-      <section class="description-page">
-        <h1 class="description-page__title">Каталог товаров</h1>
-      </section>
+      <h1 class="page-title">Каталог товаров</h1>
       <section class="catalog-items">
         <div class="catalog-items__wrap">
           <article class="catalog-item">
@@ -111,15 +105,13 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrap">
-        <section class="social">
-          <a href="#" class="social__btn  social__btn--inst"></a>
-          <a href="#" class="social__btn  social__btn--fb"></a>
-          <a href="#" class="social__btn  social__btn--tw"></a>
-          <section class="developed">
-            <p>Разработано</p>
-            <a class=".developed__logo" href=""></a>
-          </section>
-        </section>
+        <ul class="social">
+          <li href="#" class="social__btn  social__btn--inst"></li>
+          <li href="#" class="social__btn  social__btn--fb"></li>
+          <li href="#" class="social__btn  social__btn--tw"></li>
+        </ul>
+        <p>Разработано</p>
+        <a class="developed__logo" href="#"></a>
       </div>
     </footer>
   </body>

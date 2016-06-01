@@ -7,31 +7,27 @@
   <body>
     <header class="main-header">
       <div class="main-header__wrap">
-        <div class="main-header__logo">
-          <a href="index.html">
-            <img src="http://placehold.it/90x40" alt="Мишка">
-          </a>
-        </div>
+        <a class="logo" href="index.html">
+          <img src="http://placehold.it/90x40" alt="Мишка">
+        </a>
         <nav class="main-nav  main-nav--closed">
-          <a class="main-nav__toggle" type="button">Открыть меню</a>
-          <div class="main-nav__wrap">
-            <ul class="main-nav__list">
-                <li class="main-nav__list-item">
-                  <a href="catalog.html">Каталог товаров</a>
-              </li>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
               <li class="main-nav__list-item">
-                <a href="form.html">Вязание на заказ</a>
-              </li>
-              <li class="main-nav__list-item">
-                <a href="#">Поиск по сайту</a>
-              </li>
-              <li class="main-nav__list-item">
-                <a href="#">Корзина:
-                  <span>пока пуста</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+                <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a href="#">Корзина:
+                <span>пока пуста</span>
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -76,54 +72,44 @@
       <section class="about-us">
         <div class="about-us__wrap">
           <h2 class="about-us__title">Коротко о нас:</h2>
-          <div class="about-us__features">
-            <p>Экологически чистые материалы</p>
-          </div>
-          <div class="about-us__features">
-            <p>Скандинавский стиль по российской цене</p>
-          </div>
-          <div class="about-us__features">
-            <p>Увеличивает лайки на фотографиях</p>
-          </div>
-          <div class="about-us__features">
-            <p>Связано вручную с любовью и умилением</p>
-          </div>
-          <div class="about-us__features">
-            <p>Поддержка отечественного производителя</p>
-          </div>
-          <div class="about-us__features">
-            <p>Поставляется в подарочной упаковке</p>
-          </div>
+          <ul>
+            <li class="about-us__feature">Экологически чистые материалы</li>
+            <li class="about-us__feature">Скандинавский стиль по российской цене</li>
+            <li class="about-us__feature">Увеличивает лайки на фотографиях</li>
+            <li class="about-us__feature">Связано вручную с любовью и умилением</li>
+            <li class="about-us__feature">Поддержка отечественного производителя</li>
+            <li class="about-us__feature">Поставляется в подарочной упаковке</li>
+          </ul>
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrap">
-          <h2 class="reviews__title">Отзывы</h2>
-          <p class="reviews__comment">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-          <b>Анастасия Красильникова</b>
-          <span>@misssssiskras</span>
-          <div class="reviews__switchs">
-            <button class="reviews__switch  reviews__switch--left">&#8592;</button>
-            <button class="reviews__switch  reviews__switch--right">&#8594;</button>
+        <blockquote class="review">
+          <div class="review__content">
+            <h2 class="reviews__title">Отзывы</h2>
+            <p class="reviews__comment">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
           </div>
-          <a href="#" class="reviews__btn btn">Написать</a>
+          <footer class="review__author">
+            <cite class="review__author-name">Анастасия Красильникова</cite>
+            <cite class="review__author-nickname">@misssssiskras</cite>
+          </footer>
+        </blockquote>
+        <div class="reviews__switchs">
+          <button class="reviews__switch  reviews__switch--left">&#8592;</button>
+          <button class="reviews__switch  reviews__switch--right">&#8594;</button>
         </div>
+        <a href="#" class="reviews__btn  btn">Написать</a>
       </section>
       <section class="contacts">
         <div class="contacts__wrap">
           <h2 class="contacts__title">Контакты</h2>
-          <table class="contacts__content">
-            <tr>
-              <td>e-mail:</td>
-              <td>info@mimimishkashop.ru</td>
-            </tr>
-            <tr>
-              <td>адрес:</td>
-              <td>г. Санкт-Петербург,<br>
-              ул. Большая Конюшенная,<br>
-              д. 19/8, офис 101</td>
-            </tr>
-          </table>
+          <div class="contacts__content">
+            e-mail:
+            <span>info@mimimishkashop.ru</span>
+          </div>
+          <div class="contacts__content">
+            адрес:
+            <span>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
+          </div>
           <div class="contacts__map"></div>
           <a href="" class="contacts__btn  btn">Напишите нам</a>
         </div>
@@ -131,15 +117,13 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrap">
-        <section class="social">
-          <a href="#" class="social__btn  social__btn--inst"></a>
-          <a href="#" class="social__btn  social__btn--fb"></a>
-          <a href="#" class="social__btn  social__btn--tw"></a>
-          <section class="developed">
-            <p>Разработано</p>
-            <a class=".developed__logo" href=""></a>
-          </section>
-        </section>
+        <ul class="social">
+          <li href="#" class="social__btn  social__btn--inst"></li>
+          <li href="#" class="social__btn  social__btn--fb"></li>
+          <li href="#" class="social__btn  social__btn--tw"></li>
+        </ul>
+        <p>Разработано</p>
+        <a class="developed__logo" href="#"></a>
       </div>
     </footer>
   </body>
