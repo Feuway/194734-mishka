@@ -1,0 +1,30 @@
+@mixin font($family, $weight, $size, $height) {
+  font-family: $family, Arial, sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $height;
+}
+
+@mixin verdana {
+  @include font(Verdana, bold, 24px, 30px);
+  color: $color-title;
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin input {
+  width: 100%;
+  padding: 16px 0;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  &::placeholder {
+    @include font(Verdana, normal, 16px, 18px);
+  }
+}

@@ -1,0 +1,15 @@
+.main-decription {
+  position: relative;
+  width: 320px;
+  height: 506px;
+  background: #e0d8d5 url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+  &__title {
+    @include verdana;
+  }
+  &__catalogs {
+    position: absolute;
+    bottom: 0;
+    width: 319px;
+    @include font(Tahoma, bold, 15px, 24px);
+  }
+}

@@ -1,0 +1,16 @@
+.review {
+  margin: 0;
+  @include font("OpenSans", normal, 14px, 30px);
+  &__comment {
+  }
+  &__author {
+  }
+  &__author-name {
+    font-weight: bold;
+    line-height: 24px;
+    font-style: normal;
+  }
+  &__author-nickname {
+    font-style: normal;
+  }
+}

@@ -1,0 +1,17 @@
+.about-us {
+  width: $w-mobile;
+  &__wrap {
+    padding: 0 30px;
+  }
+  &__title {
+    @include verdana;
+  }
+  &__features {
+    padding: 0;
+    @include font(Verdana, bold, 16px, normal);
+    list-style: none;
+  }
+  &__feature {
+    padding-top: 90px;
+  }
+}

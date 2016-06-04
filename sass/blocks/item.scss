@@ -1,0 +1,25 @@
+.item {
+  background: #ffffff;
+  color: $color-text;
+  &__title {
+    @include verdana;
+  }
+  &__week {
+    color: #63d1bb;
+    @include font("OpenSans", bold, 16px, 16px);
+    text-transform: uppercase;
+  }
+  &__description {
+    @include font("OpenSans", normal, 14px, 24px);
+  }
+  &__features {
+    @include font("OpenSans", normal, 14px, 20px);
+  }
+  &__photo {
+  }
+  &__price {
+    @include font(Verdana, bold, 14px, 24px);
+  }
+  &__btn {
+  }
+}

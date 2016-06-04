@@ -1,0 +1,10 @@
+.order-form {
+  width: $w-mobile;
+  &__wrap {
+    padding: 0 30px;
+  }
+  &__description {
+    color: $color-text;
+    @include font("OpenSans", normal, 14px, 24px);
+  }
+}

@@ -1,0 +1,42 @@
+.catalog-item {
+  margin-bottom: 30px;
+  &__photo {
+
+  }
+  &__info {
+    padding: 30px 27px;
+    border: 1px solid #ececec;
+  }
+  &__title {
+    margin: 0;
+  }
+  &__description {
+    border-bottom: 1px solid #ececec;
+  }
+  &__characteristics {
+    margin: 0;
+    margin-bottom: 25px;
+    color: $color-text;
+    @include font("OpenSans", normal, 14px, 30px);
+  }
+  &__buy {
+    margin-top: 23px;
+  }
+  &__price {
+    @include font(Verdana, bold, 14px, 24px);
+  }
+  &__to-cart {
+
+  }
+}
+.catalog-item__photo a {
+  display: block;
+  width: 260px;
+  height: 195px;
+}
+
+.catalog-item__title a {
+    color: $color-title;
+    @include font(Verdana, bold, 16px, 24px);
+    text-decoration: none;
+  }

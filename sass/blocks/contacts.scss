@@ -1,0 +1,35 @@
+.contacts {
+  width: $w-mobile;
+  color: $color-text;
+  &__wrap {
+    padding: 0 30px;
+  }
+  &__title {
+    @include verdana;
+  }
+  &__content {
+    margin-bottom: 30px;
+    @include clearfix;
+    @include font("OpenSans", normal, 14px, 30px);
+  }
+  &__map {
+    position: relative;
+    left: -30px;
+    width: 320px;
+    height: 457px;
+    margin-bottom: 38px;
+    background: #444444 url("../../img/map-mobile@1x.jpg") no-repeat 0 0;
+  }
+  &__btn {
+    margin-bottom: 39px;
+  }
+}
+.contacts__content--left {
+  float: left;
+  width: 80px;
+}
+.contacts__content--right {
+  float: left;
+  width: 180px;
+}
+

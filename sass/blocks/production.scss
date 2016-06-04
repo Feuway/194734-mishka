@@ -1,0 +1,22 @@
+.production {
+  margin-bottom: 58px;
+  border: 1px solid #ececec;
+  &__title {
+    margin-left: 90px;
+    @include font(Verdana, bold, 16px, 24px);
+  }
+  &__video {
+    position: relative;
+    left: -1px;
+  }
+  &__description {
+    margin: 0;
+    padding: 30px;
+    color: $color-text;
+    @include font("OpenSans", normal, 14px, 24px);
+  }
+  &__btn {
+    width: auto;
+    margin: 0 30px 32px;
+  }
+}
