@@ -1,25 +1,137 @@
 .item {
   background: #ffffff;
   color: $color-text;
-  &__title {
-    @include verdana;
+}
+.item__title {
+  margin-top: 28px;
+  margin-bottom: 14px;
+  @include title;
+}
+.item__week {
+  display: block;
+  margin-bottom: 28px;
+  color: #63d1bb;
+  @include font("OpenSans", bold, 16px, 16px);
+  text-transform: uppercase;
+}
+.item__description {
+  margin: 0;
+  margin-bottom: 36px;
+  @include font("OpenSans", normal, 14px, 24px);
+}
+.item__features {
+  margin-bottom: 28px;
+  border-collapse: collapse;
+  @include font("OpenSans", normal, 14px, 20px);
+  td {
+    padding: 10px 0;
+    border-bottom: 1px solid #818181;
   }
-  &__week {
-    color: #63d1bb;
-    @include font("OpenSans", bold, 16px, 16px);
-    text-transform: uppercase;
+  td:last-child {
+    width: 193px;
+    padding-left: 30px;
   }
-  &__description {
-    @include font("OpenSans", normal, 14px, 24px);
+}
+.item__photo {
+  width: 260px;
+  height: 315px;
+}
+.item__photo img {
+  width: 260px;
+  height: 315px;
+}
+.item__price {
+  display: block;
+  margin-top: 28px;
+  margin-bottom: 28px;
+  @include font(Verdana, bold, 14px, 24px);
+  text-align: center;
+}
+.item__btn {
+  margin-bottom: 41px;
+}
+
+@media($w-tablet) {
+  .item {
+    position: relative;
   }
-  &__features {
-    @include font("OpenSans", normal, 14px, 20px);
+  .item__title {
+    float: left;
+    margin-top: 42px;
+    margin-bottom: 54px;
+}
+  .item__week {
+    float: right;
+    width: 100px;
+    margin-top: 55px;
+    text-align: center;
   }
-  &__photo {
+  .item_info {
+    width: 292px;
+    clear: both;
   }
-  &__price {
-    @include font(Verdana, bold, 14px, 24px);
+  .item__description {
+    margin-bottom: 50px;
+    @include font-size-rem(16px);
+    line-height: 30px;
   }
-  &__btn {
+  .item__features {
+    margin-bottom: 58px;
+    @include font-size-rem(15px);
+  }
+  .item__price {
+    margin-bottom: 32px;
+    @include font-size-rem(18px);
+  }
+  .item__photo {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    width: 333px;
+    height: 404px;
+  }
+  .item__photo img {
+    width: 333px;
+    height: 404px;
+  }
+  .item__btn {
+    margin-bottom: 69px;
+  }
+}
+
+@media($w-desktop) {
+  .item__title {
+    position: relative;
+    z-index: 10;
+    float: none;
+    display: inline-block;
+    margin-top: 127px;
+  }
+  .item__week {
+    float: left;
+    margin: 140px 42px 0 30px;
+  }
+  .item_info {
+    margin-left: 176px;
+  }
+  .item__description {
+    margin-bottom: 64px;
+  }
+  .item__features {
+    margin-bottom: 110px;
+  }
+  .item__photo {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 525px;
+    height: 636px;
+  }
+  .item__photo img {
+    width: 525px;
+    height: 636px;
+  }
+  .item__btn {
+    margin-bottom: 96px;
   }
 }

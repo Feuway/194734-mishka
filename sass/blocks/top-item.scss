@@ -1,6 +1,6 @@
 .top-item {
-  width: $w-mobile;
-  &__wrap {
-    padding: 0 30px;
-  }
+  border-bottom: 1px solid #000000;
+}
+.top-item__wrap {
+  @include container;
 }

@@ -1,37 +1,36 @@
-@import "fonts.scss";
-@import "variables.scss";
-@import "mixins.scss";
+@import "fonts";
+@import "variables";
+@import "mixins";
+@import "base";
 
-@import "blocks/logo.scss";
-@import "blocks/btn.scss";
+@import "blocks/logo";
+@import "blocks/btn";
 
-@import "blocks/main-header.scss";
-@import "blocks/main-nav.scss";
+@import "blocks/main-header";
+@import "blocks/main-nav";
 
-@import "blocks/main-decription.scss";
-@import "blocks/section-catalog.scss";
+@import "blocks/main-decription";
+@import "blocks/section-catalog";
 
-@import "blocks/top-item.scss";
-@import "blocks/item.scss";
+@import "blocks/top-item";
+@import "blocks/item";
 
-@import "blocks/about-us.scss";
+@import "blocks/about-us";
 
-@import "blocks/reviews.scss";
-@import "blocks/review.scss";
+@import "blocks/reviews";
+@import "blocks/review";
 
-@import "blocks/contacts.scss";
+@import "blocks/contacts";
 
-@import "blocks/main-footer.scss";
-@import "blocks/social.scss";
-@import "blocks/developed-logo.scss";
+@import "blocks/main-footer";
+@import "blocks/footer-logo";
+@import "blocks/social";
+@import "blocks/developed";
 
+@import "blocks/page-title";
 
-@import "blocks/page-title.scss";
+@import "blocks/catalog-items";
+@import "blocks/catalog-item";
+@import "blocks/production";
 
-@import "blocks/catalog-items.scss";
-@import "blocks/catalog-item.scss";
-@import "blocks/production.scss";
-
-@import "blocks/order-form.scss";
-@import "blocks/order.scss";
-@import "blocks/filter.scss"
+@import "blocks/order";

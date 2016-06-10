@@ -1,42 +1,113 @@
 .catalog-item {
   margin-bottom: 30px;
-  &__photo {
+  @include clearfix;
 
+  @media($w-tablet) {
+    margin-bottom: 54px;
   }
-  &__info {
-    padding: 30px 27px;
-    border: 1px solid #ececec;
+
+  @media($w-desktop) {
+    display: inline-block;
+    width: 315px;
+    margin-left: 47px;
+    font-size: 0;
+    vertical-align: top;
   }
-  &__title {
+  &:first-child {
+    @media($w-desktop) {
+      margin-left: 0;
+    }
+  }
+}
+.catalog-item__photo {
+  width: 260px;
+  height: 195px;
+
+  @media($w-tablet) {
+    float: left;
+    width: 334px;
+    height: 333px;
+  }
+
+  @media($w-desktop) {
+    float: none;
+    width: 315px;
+    height: 462px;
+  }
+}
+.catalog-item__info {
+  padding: 30px 27px;
+  border: 1px solid #ececec;
+
+  @media($w-tablet) {
+    float: right;
+    width: 278px;
+  }
+
+  @media($w-desktop) {
+    float: none;
+    width: auto;
+  }
+}
+.catalog-item__title {
+  margin: 0;
+
+  @media($w-tablet) {
+    @include font-size-rem(18px);
+  }
+}
+.catalog-item__description {
+  margin-bottom: 25px;
+  @media($w-tablet) {
+    height: 222px;
     margin: 0;
   }
-  &__description {
-    border-bottom: 1px solid #ececec;
+  @media($w-desktop) {
+    height: 88px;
   }
-  &__characteristics {
-    margin: 0;
-    margin-bottom: 25px;
-    color: $color-text;
-    @include font("OpenSans", normal, 14px, 30px);
-  }
-  &__buy {
-    margin-top: 23px;
-  }
-  &__price {
-    @include font(Verdana, bold, 14px, 24px);
-  }
-  &__to-cart {
+}
+.catalog-item__characteristics {
+  margin: 0;
+  color: $color-text;
+  @include font("OpenSans", normal, 14px, 30px);
 
+  @media($w-tablet) {
+    @include font-size-rem(15px);
   }
+}
+.catalog-item__buy {
+  height: 20px;
+  padding-top: 23px;
+  border-top: 1px solid #ececec;
+}
+.catalog-item__price {
+  color: $color-title;
+  @include font(Verdana, bold, 14px, 24px);
+
+  @media($w-tablet) {
+    @include font-size-rem(16px);
+  }
+}
+.catalog-item__to-cart {
 }
 .catalog-item__photo a {
   display: block;
   width: 260px;
   height: 195px;
+
+  @media($w-tablet) {
+    width: 334px;
+    height: 333px;
+  }
+
+  @media($w-desktop) {
+    width: 315px;
+    height: 462px;
+  }
 }
 
 .catalog-item__title a {
-    color: $color-title;
-    @include font(Verdana, bold, 16px, 24px);
-    text-decoration: none;
-  }
+  color: $color-title;
+  @include font(Verdana, bold, 16px, 24px);
+  text-decoration: none;
+}

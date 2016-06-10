@@ -1,16 +1,32 @@
 .review {
   margin: 0;
   @include font("OpenSans", normal, 14px, 30px);
-  &__comment {
-  }
-  &__author {
-  }
-  &__author-name {
-    font-weight: bold;
-    line-height: 24px;
-    font-style: normal;
-  }
-  &__author-nickname {
-    font-style: normal;
+}
+.review__author {
+  width: 260px;
+  margin-bottom: 30px;
+}
+.review__author-name {
+  font-weight: bold;
+  line-height: normal;
+  font-style: normal;
+}
+.review__author-nickname {
+  font-style: normal;
+}
+
+@media($w-tablet) {
+  .review {
+    margin-bottom: 184px;
+    @include font-size-rem(16px);
   }
 }
+
+@media($w-desktop) {
+  .review {
+    width: 700px;
+    margin-left: 176px;
+    margin-bottom: 190px;
+  }
+}
+

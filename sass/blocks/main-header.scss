@@ -1,7 +1,38 @@
 .main-header {
-  width: $w-mobile;
   background: #ffffff;
-  &__wrap {
-    margin: 0 30px;
+}
+.main-header__wrap {
+  @include clearfix;
+}
+.main-header__toggle {
+  float: right;
+  width: 20px;
+  height: 14px;
+  margin: 30px 0;
+  margin-right: 30px;
+  padding: 0;
+  border: none;
+  background: #ffffff url("../../img/icon-menu-open.svg") no-repeat;
+  font-size: 0;
+  cursor: pointer;
+  &--closed {
+    background: #ffffff url("../../img/icon-menu-close.svg") no-repeat;
   }
+}
+
+@media($w-tablet) {
+  .main-header {
+    border-bottom: 1px solid #ececec;
+  }
+  .main-header__wrap {
+    position: relative;
+    @include container;
+  }
+  .main-header__toggle {
+    display: none;
+  }
+}
+
+@media($w-desktop) {
+  background: red;
 }

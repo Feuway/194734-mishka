@@ -1,22 +1,30 @@
 .production {
   margin-bottom: 58px;
   border: 1px solid #ececec;
-  &__title {
-    margin-left: 90px;
-    @include font(Verdana, bold, 16px, 24px);
+}
+.production__title {
+  margin-left: 90px;
+  @include font(Verdana, bold, 16px, 24px);
+}
+.production__video {
+
+  @media($w-tablet) {
+    width: 668px;
+    height: 455px;
   }
-  &__video {
-    position: relative;
-    left: -1px;
+
+  @media($w-desktop) {
+    float: left;
+    width: 682px;
   }
-  &__description {
-    margin: 0;
-    padding: 30px;
-    color: $color-text;
-    @include font("OpenSans", normal, 14px, 24px);
-  }
-  &__btn {
-    width: auto;
-    margin: 0 30px 32px;
-  }
+}
+.production__description {
+  margin: 0;
+  padding: 30px;
+  color: $color-text;
+  @include font("OpenSans", normal, 14px, 24px);
+}
+.production__btn {
+  width: auto;
+  margin: 0 30px 32px;
 }

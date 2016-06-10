@@ -1,15 +1,38 @@
 .main-decription {
-  position: relative;
-  width: 320px;
-  height: 506px;
-  background: #e0d8d5 url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
-  &__title {
-    @include verdana;
-  }
-  &__catalogs {
-    position: absolute;
-    bottom: 0;
-    width: 319px;
+  margin: 0 auto;
+  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% 0;
+}
+.main-decription__wrap {
+  @include container;
+  width: auto;
+  padding: 0;
+}
+.main-decription__title {
+  margin: 0;
+  padding-top: 95px;
+  padding-bottom: 129px;
+  @include title;
+  text-align: center;
+}
+.main-decription__catalogs {
+    width: 100%;
     @include font(Tahoma, bold, 15px, 24px);
+}
+
+@media($w-tablet) {
+  .main-decription {
+    @include clearfix();
+  }
+  .main-decription__title {
+    padding-top: 159px;
+    padding-bottom: 376px;
+    @include font(Verdana, bold, 40px, 50px);
+  }
+}
+
+@media($w-desktop) {
+  .main-decription__title {
+    padding: 159px 200px 359px;
+    @include font(Verdana, bold, 50px, 57px);
   }
 }

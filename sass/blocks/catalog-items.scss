@@ -1,6 +1,14 @@
-.catalog-items{
-  width: $w-mobile;
+.catalog-items {
+  margin-top: 30px;
   &__wrap {
-    padding: 0 30px;
+    @include container;
+  }
+
+  @media($w-tablet) {
+    margin-bottom: 79px;
+  }
+
+  @media($w-desktop) {
+    margin-bottom: 128px;
   }
 }

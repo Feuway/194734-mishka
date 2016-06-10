@@ -11,3 +11,10 @@
 
   min-height: 103px;
 }
+
+@media($w-tablet) {
+  .section-catalog {
+    float: left;
+    width: 50%;
+  }
+}
