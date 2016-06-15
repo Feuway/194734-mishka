@@ -3,54 +3,54 @@
 }
 .about-us__wrap {
   @include container;
+
+   @media($w-desktop) {
+    margin-left: 176px;
+   }
 }
 .about-us__title {
   margin-top: 32px;
   margin-bottom: 2px;
   @include title;
-}
-.about-us__features {
-  margin: 0;
-  margin-bottom: 63px;
-  padding: 0;
-  @include font(Verdana, bold, 16px, normal);
-  list-style: none;
-}
-.about-us__feature {
-  display: inline-block;
-  padding-top: 85px;
-  vertical-align: top;
-}
 
-@media($w-tablet) {
-  .about-us__title {
+  @media($w-tablet) {
     margin-top: 56px;
     margin-bottom: 20px;
   }
-  .about-us__features {
-    margin-bottom: 81px;
-  }
-  .about-us__feature {
-    width: 330px;
-    margin-right: 2px;
-    @include font-size-rem(20px);
-  }
-  .about-us__feature:nth-child(2n) {
-    margin-right: 0;
-  }
-}
 
-@media($w-desktop) {
-  .about-us__title {
+  @media($w-desktop) {
     margin-top: 68px;
     margin-bottom: 16px;
-    margin-left: 176px;
   }
-  .about-us__features {
-    margin-left: 176px;
+}
+.about-us__features {
+  display: flex;
+  flex-flow: wrap;
+  margin: 0;
+  margin-bottom: 63px;
+  padding: 0;
+  color: $color-title;
+  @include font(Verdana, bold, 16px, normal);
+  list-style: none;
+
+  @media($w-tablet) {
+    margin-bottom: 81px;
+  }
+
+  @media($w-desktop) {
     margin-bottom: 88px;
   }
-  .about-us__feature {
+}
+.about-us__feature {
+  padding-top: 85px;
+
+  @media($w-tablet) {
+    flex-basis: 325px;
+    margin-right: 10px;
+    @include font-size-rem(20px);
+  }
+
+  @media($w-desktop) {
     margin-right: 25px;
   }
 }

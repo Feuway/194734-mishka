@@ -1,7 +1,17 @@
 .order__wrap {
   position: relative;
   @include container;
-  @include clearfix;
+
+  @media($w-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 167px;
+  }
+
+  @media($w-desktop) {
+    margin-left: 175px;
+    margin-right: 175px;
+  }
 }
 .order__description {
   @include container;
@@ -63,7 +73,7 @@
   }
 
   @media($w-tablet) {
-    position: relative;
+    position: absolute;
     left: 0;
   }
   @media($w-desktop) {
@@ -87,6 +97,7 @@
 }
 
 .order__field {
+  flex-grow: 1;
   width: 100%;
   padding: 16px 0;
   margin-bottom: 22px;
@@ -105,16 +116,11 @@
   }
 
   @media($w-tablet) {
-    width: 500px;
-    margin-left: 168px;
-
-    &--textarea {
-      width: 468px;
-    }
+    flex-basis: 85%;
   }
 
   @media($w-desktop) {
-    width: 700px;
+    flex-basis: 90%;
 
     &--textarea {
       width: 668px;
@@ -129,11 +135,11 @@
 
   &--radio {
     position: relative;
+    flex-basis: 50%;
     margin-bottom: 32px;
     padding-left: 64px;
 
     @media($w-tablet) {
-      margin-left: 168px;
     }
 
     &::before {
@@ -153,30 +159,15 @@
 
   &--checkbox {
     position: relative;
+    width: 141px;
     margin-bottom: 46px;
     padding-left: 64px;
 
     @media($w-tablet) {
-      display: inline-block;
-      width: 141px;
-      margin-left: 168px;
       margin-right: 40px;
-
-      &:nth-of-type(2n) {
-        margin-left: 0;
-        margin-right: 0;
-      }
     }
 
     @media($w-desktop) {
-      margin-left: 0;
-      margin-right: 40px;
-      &:nth-of-type(3n+1) {
-        margin-left: 168px;
-      }
-      &:nth-of-type(2n) {
-        margin-right: 40px;
-      }
     }
 
     &::before {
@@ -193,8 +184,6 @@
 
   &--field {
     @media($w-tablet) {
-      float: left;
-      margin-left: 168px;
       padding-top: 16px;
     }
 
@@ -206,15 +195,15 @@
   margin-bottom: 58px;
 
   @media($w-tablet) {
-    float: left;
     width: auto;
+    margin-right: auto;
     padding: 14px 35px;
   }
 }
 .order__required {
   display: none;
+
   @media($w-tablet) {
-    float: right;
     display: block;
     padding: 10px 0;
     @include font-size-rem(16px);
