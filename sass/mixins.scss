@@ -40,6 +40,19 @@
 }
 
 @mixin container {
+  min-width: $w-mobile;
+  margin: 0 auto;
+  padding: 0 30px;
+  @media($w-tablet) {
+    min-width: 668px;
+    padding: 0 50px;
+  }
+  @media($w-desktop) {
+    min-width: 1050px;
+  }
+}
+
+@mixin fluid {
   width: $w-mobile;
   margin: 0 auto;
   padding: 0 30px;
