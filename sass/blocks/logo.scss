@@ -1,26 +1,15 @@
 .logo {
-  float: left;
-  display: block;
+  align-self: center;
   width: 90px;
   height: 35px;
   margin: 22px 0 20px;
-  margin-left: 36%;
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
 
-@media($w-tablet) {
-  .logo {
+  @media($w-tablet) {
     width: 116px;
     height: 46px;
     margin-left: 0;
   }
-}
 
-@media($w-desktop) {
-  .logo {
-
+  @media($w-desktop) {
   }
 }
