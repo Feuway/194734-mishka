@@ -13,26 +13,21 @@
   padding-bottom: 129px;
   @include title;
   text-align: center;
-}
-.main-decription__catalogs {
-    width: 100%;
-    @include font(Tahoma, bold, 15px, 24px);
-}
 
-@media($w-tablet) {
-  .main-decription {
-    @include clearfix();
-  }
-  .main-decription__title {
+  @media($w-tablet) {
     padding-top: 159px;
     padding-bottom: 376px;
-    @include font(Verdana, bold, 40px, 50px);
+  }
+
+  @media($w-desktop) {
+    padding: 159px 200px 359px;
   }
 }
+.main-decription__catalogs {
+  width: 100%;
+  @include font(Tahoma, bold, 15px, 24px);
 
-@media($w-desktop) {
-  .main-decription__title {
-    padding: 159px 200px 359px;
-    @include font(Verdana, bold, 50px, 57px);
+  @media($w-tablet) {
+    display: flex;
   }
 }
