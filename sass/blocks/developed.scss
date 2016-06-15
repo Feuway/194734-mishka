@@ -1,0 +1,11 @@
+.developed {
+
+}
+.developed p {
+  display: inline-block;
+  @include font(Verdana, bold, 18px, 18px);
+}
+.developed__logo {
+  display: inline-block;
+}
+
