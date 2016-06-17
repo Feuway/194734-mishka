@@ -16,7 +16,7 @@
   @media($w-tablet) {
     flex-flow: wrap row;
     position: relative;
-    @include container;
+    margin: 0 50px;
   }
 }
 

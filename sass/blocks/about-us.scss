@@ -30,11 +30,15 @@
   margin-bottom: 63px;
   padding: 0;
   color: $color-title;
-  @include font(Verdana, bold, 16px, normal);
+  font-family: $font-verdana;
+  font-weight: bold;
+  @include font-size-rem(16px);
+  line-height: normal;
   list-style: none;
 
   @media($w-tablet) {
     margin-bottom: 81px;
+    @include font-size-rem(20px);
   }
 
   @media($w-desktop) {
@@ -46,8 +50,7 @@
 
   @media($w-tablet) {
     flex-basis: 325px;
-    margin-right: 10px;
-    @include font-size-rem(20px);
+    margin-right: 9px;
   }
 
   @media($w-desktop) {

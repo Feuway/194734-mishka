@@ -1,6 +1,8 @@
 .review {
   margin: 0;
-  @include font("OpenSans", normal, 14px, 30px);
+  font-family: $font-verdana;
+  @include font-size-rem(14px);
+  @include line-height(14px, 30px);
 
   @media($w-tablet) {
     @include font-size-rem(16px);

@@ -32,7 +32,10 @@
   display: block;
   margin-bottom: 28px;
   color: #63d1bb;
-  @include font("OpenSans", bold, 16px, 16px);
+  font-family: $font-opensans;
+  font-weight: bold;
+  @include font-size-rem(16px);
+  @include line-height(16px, 16px);
   text-transform: uppercase;
 
   @media($w-tablet) {
@@ -50,12 +53,14 @@
 .item__description {
   margin: 0;
   margin-bottom: 36px;
-  @include font("OpenSans", normal, 14px, 24px);
+  font-family: $font-opensans;
+  @include font-size-rem(14px);
+  @include line-height(14px, 24px);
 
   @media($w-tablet) {
     margin-bottom: 50px;
     @include font-size-rem(16px);
-    line-height: 30px;
+    @include line-height(16px, 30px);
   }
 
   @media($w-desktop) {
@@ -65,11 +70,15 @@
 .item__features {
   margin-bottom: 28px;
   border-collapse: collapse;
-  @include font("OpenSans", normal, 14px, 20px);
+  font-family: $font-opensans;
+  @include font-size-rem(14px);
+  @include line-height(14px, 20px);
+
   td {
     padding: 10px 0;
     border-bottom: 1px solid #818181;
   }
+
   td:last-child {
     width: 193px;
     padding-left: 30px;
@@ -122,16 +131,15 @@
   display: block;
   margin-top: 28px;
   margin-bottom: 28px;
-  @include font(Verdana, bold, 14px, 24px);
+  font-family: $font-verdana;
+  font-weight: bold;
+  @include font-size-rem(14px);
+  @include line-height(14px, 24px);
   text-align: center;
 
   @media($w-tablet) {
     margin-bottom: 32px;
     @include font-size-rem(18px);
-  }
-
-  @media($w-desktop) {
-
   }
 }
 .item__btn {

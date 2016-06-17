@@ -25,9 +25,14 @@
 }
 .main-decription__catalogs {
   width: 100%;
-  @include font(Tahoma, bold, 15px, 24px);
+  font-family: $font-tahoma;
+  font-weight: bold;
+  @include font-size-rem(18px);
+  @include line-height (18px, 24px);
 
   @media($w-tablet) {
     display: flex;
+    @include font-size-rem(20px);
+    @include line-height (20px, 30px);
   }
 }
