@@ -1,14 +1,22 @@
 .main-nav {
-  clear: both;
-  @include font(Verdana, bold, 16px, 24px);
-  &--closed {
+  flex-grow: 1;
+  font-family: $font-verdana;
+  font-weight: bold;
+  @include font-size-rem(16px);
+  @include line-height(16px, 24px);
+
+  @media($w-tablet) {
+    float: right;
+    clear: none;
   }
 }
 .main-nav__list {
-  display: block;
-  width: 100%;
   margin: 0;
   padding: 0;
+
+  @media($w-tablet) {
+    display: flex;
+  }
 }
 .main-nav__list-item {
   border-top: 1px solid #ececec;
@@ -16,28 +24,31 @@
   a {
     display: block;
     padding: 30px;
-    padding-left: 76px;
+    padding-left: 24%;
     color: $color-title;
     text-decoration: none;
   }
+
+  // &:nth-child(1) {
+  //   display: none;
+  // }
+
+  // &:nth-child(2) {
+  //   display: none;
+  // }
+
   &:nth-child(3) {
     background: #ffffff url("../../img/icon-search.svg") no-repeat 7% 50%;
   }
+
   &:nth-child(4) {
     background: #ffffff url("../../img/icon-cart.svg") no-repeat 7% 50%;
     border-bottom: 1px solid #ececec;
   }
-}
 
-@media($w-tablet) {
-
-  .main-nav {
-    float: right;
-    clear: none;
-  }
-  .main-nav__list-item {
-    display: inline-block;
+  @media($w-tablet) {
     border: none;
+
     &:nth-child(1) {
       position: absolute;
       bottom: -45px;
@@ -46,27 +57,33 @@
       padding: 0;
       padding-left: 50px;
       font-size: 14px;
+
       a {
         padding: 0;
       }
     }
+
     &:nth-child(2) {
       @extend .main-nav__list-item:nth-child(1);
       left: 218px;
     }
+
     &:nth-child(3) {
-      width: 82px;
+      flex-basis: 82px;
+      margin-left: auto;
       padding: 0;
       border-left: 1px solid #ececec;
       background-position: 50% 50%;
       font-size: 0;
+
       a {
         padding-top: 36px;
         padding-bottom: 28px;
       }
     }
+
     &:nth-child(4) {
-      width: 266px;
+      flex-basis: 266px;
       border: none;
       border-left: 1px solid #ececec;
       a {
@@ -76,8 +93,9 @@
       }
     }
   }
+
+  @media($w-desktop) {
+
+  }
 }
 
-@media($w-desktop) {
-
-}

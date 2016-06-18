@@ -4,6 +4,7 @@
   font-size: $size;
   line-height: $height;
 }
+// шрифты в переменные
 
 @mixin font-size-rem($font-size) {
   font-size: ($font-size / $font-base-size) * 1rem;
@@ -40,6 +41,19 @@
 }
 
 @mixin container {
+  width: $w-mobile;
+  margin: 0 auto;
+  padding: 0 30px;
+  @media($w-tablet) {
+    width: 668px;
+    padding: 0 50px;
+  }
+  @media($w-desktop) {
+    width: 1050px;
+  }
+}
+
+@mixin fluid {
   width: $w-mobile;
   margin: 0 auto;
   padding: 0 30px;
