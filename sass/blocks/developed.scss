@@ -1,5 +1,13 @@
+.developed {
+  display: flex;
+  align-items: center;
+
+  @media($w-tablet) {
+    margin: 0;
+  }
+}
 .developed p {
-  display: inline-block;
+  margin-right: 25px;
   color: $color-title;
   font-family: $font-verdana;
   font-weight: bold;
@@ -7,6 +15,6 @@
   @include line-height(18px, 18px);
 }
 .developed__logo {
-  display: inline-block;
+  align-self: flex-end;
 }
 

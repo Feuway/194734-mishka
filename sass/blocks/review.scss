@@ -12,8 +12,13 @@
     flex-basis: 700px;
   }
 }
+.review__comment {
+  margin: 0;
+  padding: 0;
+}
 .review__author {
   width: 260px;
+  margin-top: 5px;
 }
 .review__author-name {
   font-weight: bold;

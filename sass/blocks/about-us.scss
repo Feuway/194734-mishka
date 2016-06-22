@@ -1,11 +1,17 @@
 .about-us {
   border-bottom: 1px solid #000000;
+
+  @media($w-desktop) {
+    padding: 0 50px;
+   }
 }
 .about-us__wrap {
   @include container;
 
    @media($w-desktop) {
-    margin-left: 176px;
+    width: 875px;
+    padding-left: 175px;
+    padding-right: 0;
    }
 }
 .about-us__title {
