@@ -9,6 +9,7 @@
   @media($w-desktop) {
     display: block;
     width: 315px;
+    margin-bottom: 57px;
   }
 }
 
@@ -30,16 +31,14 @@
 .catalog-item__info {
   display: flex;
   flex-flow: wrap;
-  padding: 30px 27px;
+  padding: 27px 27px 30px;
   border: 1px solid #ececec;
 
   @media($w-tablet) {
-    float: right;
     width: 278px;
   }
 
   @media($w-desktop) {
-    float: none;
     width: auto;
   }
 }
@@ -47,13 +46,13 @@
   margin: 0;
 }
 .catalog-item__description {
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   @media($w-tablet) {
-    height: 222px;
+    min-height: 222px;
     margin: 0;
   }
   @media($w-desktop) {
-    height: 88px;
+    min-height: 88px;
   }
 }
 .catalog-item__characteristics {
@@ -73,7 +72,7 @@
   justify-content: space-between;
   flex-basis: 100%;
   height: 20px;
-  padding-top: 23px;
+  padding-top: 22px;
   border-top: 1px solid #ececec;
 }
 .catalog-item__price {

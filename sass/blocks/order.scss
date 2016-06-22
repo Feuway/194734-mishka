@@ -13,7 +13,7 @@
 .order__description {
   @include container;
   margin-top: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   color: $color-text;
   font-family: $font-opensans;
   @include font-size-rem(14px);
@@ -36,6 +36,21 @@
   padding: 0;
   border: none;
 
+  &--type {
+    padding-bottom: 10px;
+  }
+
+  &--name {
+    padding-bottom: 12px;
+  }
+
+  &--phone {
+    padding-bottom: 20px;
+    }
+
+  &--email {
+    padding-bottom: 12px;
+  }
   @media($w-tablet) {
     &--grey {
       background: #f1f1f1;
@@ -115,7 +130,7 @@
   text-transform: uppercase;
 
   &--type {
-    margin-bottom: 31px;
+    margin-bottom: 33px;
   }
 
   &--color {
@@ -131,19 +146,20 @@
   }
 
   &--phone {
-    margin-top: 13px;
-
+    margin-bottom: 10px;
     @media($w-tablet) {
       margin-top: 20px;
     }
   }
 
   &--email {
-    margin-top: 20px;
+    margin-bottom: 9px;
+    @media($w-tablet) {
+      margin-top: 20px;
+    }
   }
 
   &--add {
-    margin-top: 12px;
     margin-bottom: 33px;
 
     @media($w-tablet) {
@@ -269,10 +285,11 @@
   &--checkbox {
     position: relative;
     width: 141px;
-    margin-bottom: 58px;
+    margin-bottom: 47px;
     padding-left: 64px;
 
     @media($w-tablet) {
+      margin-bottom: 58px;
       padding-left: 82px;
     }
 
@@ -300,7 +317,7 @@
 
   &--field {
     align-self: baseline;
-    margin-bottom: 6px;
+    margin-bottom: 3px;
 
     @media($w-tablet) {
       margin-right: 38px;
