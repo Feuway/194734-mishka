@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Вязание на заказ.Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -36,62 +38,74 @@
       <h1 class="page-title">Вязание на заказ</h1>
       <form class="order" action="http://echo.htmlacademy.ru" method="post">
         <p class="order__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <fieldset class="order__container">
+        <fieldset class="order__container  order__container--type">
           <div class="order__wrap">
             <div class="order__title  order__title--type">Тип</div>
-            <input class="order__filter  order__filter--radio" type="radio" name="accessory" id="accessory" checked>
-            <label class="order__label  order__label--radio" for="accessory">Аксессуар для интерьера</label>
-            <input class="order__filter  order__filter--radio" type="radio" name="toy" id="toy">
-            <label class="order__label  order__label--radio" for="toy">Детская игрушка</label>
+            <div class="order__block  order__block--radio">
+              <input class="order__filter  order__filter--radio" type="radio" name="accessory" id="accessory" checked>
+              <label class="order__label  order__label--radio" for="accessory">Аксессуар для интерьера</label>
+              <input class="order__filter  order__filter--radio" type="radio" name="toy" id="toy">
+              <label class="order__label  order__label--radio" for="toy">Детская игрушка</label>
+            </div>
           </div>
         </fieldset>
-        <fieldset class="order__container  order__container--grey">
+        <fieldset class="order__container  order__container--grey  order__container--color">
           <div class="order__wrap">
             <div class="order__title  order__title--color">Цвет</div>
-            <input class="order__filter  order__filter--checkbox" type="checkbox" name="white" id="white" checked>
-            <label class="order__label  order__label--checkbox" for="white">Белый</label>
-            <input class="order__filter  order__filter--checkbox" type="checkbox" name="grey" id="grey" checked>
-            <label class="order__label  order__label--checkbox" for="grey">Серый</label>
-            <input class="order__filter  order__filter--checkbox" type="checkbox" name="tiffany" id="tiffany">
-            <label class="order__label  order__label--checkbox" for="tiffany">&#171;Тиффани&#187;</label>
-            <input class="order__filter  order__filter--checkbox" type="checkbox" name="black" id="black">
-            <label class="order__label  order__label--checkbox" for="black">Черный</label>
-            <input class="order__filter  order__filter--checkbox" type="checkbox" name="pink" id="pink">
-            <label class="order__label  order__label--checkbox" for="pink">Розовый</label>
-            <input class="order__filter  order__filter--checkbox" type="checkbox" name="orange" id="orange">
-            <label class="order__label  order__label--checkbox" for="orange">Оранжевый</label>
+            <div class="order__block  order__block--checkbox">
+              <input class="order__filter  order__filter--checkbox" type="checkbox" name="white" id="white" checked>
+              <label class="order__label  order__label--checkbox" for="white">Белый</label>
+              <input class="order__filter  order__filter--checkbox" type="checkbox" name="grey" id="grey" checked>
+              <label class="order__label  order__label--checkbox" for="grey">Серый</label>
+              <input class="order__filter  order__filter--checkbox" type="checkbox" name="tiffany" id="tiffany">
+              <label class="order__label  order__label--checkbox" for="tiffany">&#171;Тиффани&#187;</label>
+              <input class="order__filter  order__filter--checkbox" type="checkbox" name="black" id="black">
+              <label class="order__label  order__label--checkbox" for="black">Черный</label>
+              <input class="order__filter  order__filter--checkbox" type="checkbox" name="pink" id="pink">
+              <label class="order__label  order__label--checkbox" for="pink">Розовый</label>
+              <input class="order__filter  order__filter--checkbox" type="checkbox" name="orange" id="orange">
+              <label class="order__label  order__label--checkbox" for="orange">Оранжевый</label>
+            </div>
           </div>
         </fieldset>
-        <fieldset class="order__container">
+        <fieldset class="order__container  order__container--name">
           <div class="order__wrap">
             <div class="order__title  order__title--name">ФИО</div>
-            <label class="order__label  order__label--field" for="surname">Фамилия:</label>
-            <input class="order__field" type="text" name="surname" id="surname" placeholder="Укажите фамлию">
-            <label class="order__label  order__label--field" for="name">Имя:</label>
-            <input class="order__field" type="text" name="name" id="name" placeholder="Введите ваше имя">
-            <label class="order__label  order__label--field" for="middle-name">Отчество:</label>
-            <input class="order__field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+            <div class="order__block">
+              <label class="order__label  order__label--field" for="surname">Фамилия:</label>
+              <input class="order__field" type="text" name="surname" id="surname" placeholder="Укажите фамлию">
+              <label class="order__label  order__label--field" for="name">Имя:</label>
+              <input class="order__field" type="text" name="name" id="name" placeholder="Введите ваше имя">
+              <label class="order__label  order__label--field" for="middle-name">Отчество:</label>
+              <input class="order__field" type="text" name="middle-name" id="middle-name" placeholder="Отчество, если желаете">
+              </div>
           </div>
         </fieldset>
-        <fieldset class="order__container  order__container--grey">
+        <fieldset class="order__container  order__container--grey  order__container--phone">
           <div class="order__wrap">
             <div class="order__title  order__title--phone">Тел</div>
-            <input class="order__field" type="tel" name="tel" placeholder="+7 XXX XX XX">
+            <div class="order__block">
+              <input class="order__field" type="tel" name="tel" placeholder="+7 XXX XX XX">
+            </div>
           </div>
         </fieldset>
-        <fieldset class="order__container  order__container--grey">
+        <fieldset class="order__container  order__container--grey  order__container--email">
           <div class="order__wrap">
             <div class="order__title  order__title--email">E-mail</div>
-            <input class="order__field" type="email" name="email" placeholder="Ваш e-mail">
+            <div class="order__block">
+              <input class="order__field" type="email" name="email" placeholder="Ваш e-mail">
+            </div>
           </div>
         </fieldset>
-        <fieldset class="order__container">
+        <fieldset class="order__container  order__container--add">
           <div class="order__wrap">
             <div class="order__title  order__title--add">Доп</div>
-            <textarea class="order__field  order__field--textarea" name="add" rows="7" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="order__block">
+              <textarea class="order__field  order__field--textarea" name="add" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
           </div>
         </fieldset>
-        <div class="order__wrap">
+        <div class="order__container  order__container--btn  order__wrap">
           <input class="order__btn  btn" type="submit"  value="Отправить заказ">
           <span class="order__required">Все поля являются обязательными</span>
         </div>
@@ -103,14 +117,14 @@
           <img src="img/logo-mobile.svg" width="108" height="36" alt="">
         </a>
         <ul class="social">
-          <li href="#" class="social__btn  social__btn--inst">
-            <a href="#"></a>
+          <li>
+            <a class="social__btn  social__btn--inst" href="#"></a>
           </li>
-          <li href="#" class="social__btn  social__btn--fb">
-            <a href="#"></a>
+          <li>
+            <a class="social__btn  social__btn--fb" href="#"></a>
           </li>
-          <li href="#" class="social__btn  social__btn--tw">
-            <a href="#"></a>
+          <li>
+            <a class="social__btn  social__btn--tw" href="#"></a>
           </li>
         </ul>
         <div class="developed">

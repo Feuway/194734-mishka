@@ -1,14 +1,24 @@
 .catalog-items {
   margin-top: 30px;
-  &__wrap {
-    @include container;
-  }
+  margin-bottom: 58px;
 
   @media($w-tablet) {
-    margin-bottom: 79px;
+    margin-top: 79px;
+    margin-bottom: 63px;
   }
 
   @media($w-desktop) {
-    margin-bottom: 128px;
+    margin-top: 128px;
+    margin-bottom: 105px;
+  }
+}
+
+.catalog-items__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  @include container;
+
+  @media($w-desktop) {
+    justify-content: space-between;
   }
 }

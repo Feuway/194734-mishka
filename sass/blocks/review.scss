@@ -1,10 +1,24 @@
 .review {
   margin: 0;
-  @include font("OpenSans", normal, 14px, 30px);
+  font-family: $font-verdana;
+  @include font-size-rem(14px);
+  @include line-height(14px, 30px);
+
+  @media($w-tablet) {
+    @include font-size-rem(16px);
+  }
+
+  @media($w-desktop) {
+    flex-basis: 700px;
+  }
+}
+.review__comment {
+  margin: 0;
+  padding: 0;
 }
 .review__author {
   width: 260px;
-  margin-bottom: 30px;
+  margin-top: 5px;
 }
 .review__author-name {
   font-weight: bold;
@@ -14,19 +28,3 @@
 .review__author-nickname {
   font-style: normal;
 }
-
-@media($w-tablet) {
-  .review {
-    margin-bottom: 184px;
-    @include font-size-rem(16px);
-  }
-}
-
-@media($w-desktop) {
-  .review {
-    width: 700px;
-    margin-left: 176px;
-    margin-bottom: 190px;
-  }
-}
-

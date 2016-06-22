@@ -1,17 +1,53 @@
 .production {
-  margin-bottom: 58px;
+  display: flex;
+  flex-flow: wrap column;
   border: 1px solid #ececec;
+
+  @media($w-desktop) {
+    display: block;
+  }
 }
 .production__title {
+  order: -1;
+  margin: 0;
   margin-left: 90px;
-  @include font(Verdana, bold, 16px, 24px);
-}
-.production__video {
+  padding: 23px 0 24px;
+  font-family: $font-verdana;
+  @include font-size-rem(16px);
+  @include line-height(16px, 24px);
+  text-decoration: none;
 
   @media($w-tablet) {
-    width: 668px;
-    height: 455px;
+    order: 0;
+    margin-top: 41px;
+    margin-left: 105px;
+    padding: 0;
+    @include font-size-rem(18px);
+    @include line-height(18px, 24px);
   }
+
+  @media($w-desktop) {
+    float: right;
+    width: 140px;
+    margin: 0;
+    margin-top: 96px;
+    margin-bottom: 39px;
+    margin-right: 147px;
+  }
+}
+.production__video {
+  width: 260px;
+  height: 150px;
+
+  img {
+    // width: 100%;
+    // height: auto;
+  }
+
+  @media($w-tablet) {
+   width: 668px;
+   height: 455px;
+   }
 
   @media($w-desktop) {
     float: left;
@@ -20,11 +56,38 @@
 }
 .production__description {
   margin: 0;
-  padding: 30px;
+  padding: 30px 30px 25px;
   color: $color-text;
-  @include font("OpenSans", normal, 14px, 24px);
+  font-family: $font-opensans;
+  @include font-size-rem(14px);
+  @include line-height(14px, 24px);
+
+  @media($w-tablet) {
+    padding: 35px 42px;
+    @include font-size-rem(16px);
+    @include line-height(16px, 30px);
+  }
+
+  @media($w-desktop) {
+    float: right;
+    width: 237px;
+    margin-bottom: 48px;
+    margin-right: 51px;
+    padding: 0;
+  }
 }
 .production__btn {
   width: auto;
   margin: 0 30px 32px;
+
+@media($w-tablet) {
+    margin-bottom: 45px;
+  }
+
+  @media($w-desktop) {
+    float: right;
+    width: 226px;
+    margin-right: 56px;
+    margin-bottom: 45px;
+  }
 }

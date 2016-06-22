@@ -1,6 +1,9 @@
 .main-nav {
   flex-grow: 1;
-  @include font(Verdana, bold, 16px, 24px);
+  font-family: $font-verdana;
+  font-weight: bold;
+  @include font-size-rem(16px);
+  @include line-height(16px, 24px);
 
   @media($w-tablet) {
     float: right;
@@ -96,11 +99,3 @@
   }
 }
 
-
-@media($w-tablet) {
-
-}
-
-@media($w-desktop) {
-
-}
