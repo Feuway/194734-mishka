@@ -50,3 +50,13 @@
   margin: 0;
   list-style: none;
 }
+
+@mixin opacity-text {
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+}

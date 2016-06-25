@@ -1,5 +1,4 @@
 .main-nav {
-  flex-grow: 1;
   font-family: $font-verdana;
   font-weight: bold;
   @include font-size-rem(16px);
@@ -27,15 +26,9 @@
     padding-left: 24%;
     color: $color-title;
     text-decoration: none;
+
+    @include opacity-text;
   }
-
-  // &:nth-child(1) {
-  //   display: none;
-  // }
-
-  // &:nth-child(2) {
-  //   display: none;
-  // }
 
   &:nth-child(3) {
     background: #ffffff url("../../img/icon-search.svg") no-repeat 7% 50%;

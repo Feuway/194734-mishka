@@ -41,7 +41,11 @@
           <article class="catalog-item">
             <div class="catalog-item__photo">
               <a href="#">
-                <img src="img/photo-1-mobile@1x.jpg" width="260" height="195" alt="Заяц">
+                <picture>
+                  <source media="(min-width: 1100px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                  <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+                </picture>
               </a>
             </div>
             <div class="catalog-item__info">
@@ -59,8 +63,12 @@
           </article>
           <article class="catalog-item">
             <div class="catalog-item__photo">
-              <a href="">
-                <img src="img/photo-2-mobile@1x.jpg" width="260" height="195" alt="Корзина для белья">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1100px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                  <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+                </picture>
               </a>
             </div>
             <div class="catalog-item__info">
@@ -78,8 +86,12 @@
           </article>
           <article class="catalog-item">
             <div class="catalog-item__photo">
-              <a href="">
-                <img src="img/photo-3-mobile@1x.jpg" width="260" height="195" alt="Корзина для игрушек">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 1100px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                  <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+                </picture>
               </a>
             </div>
             <div class="catalog-item__info">
@@ -97,7 +109,11 @@
           </article>
           <article class="production">
             <div class="production__video">
-              <img src="img/video-mobile@1x.jpg" width="260" height="150" alt="Картинка видео">
+              <picture>
+                  <source media="(min-width: 1100px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                  <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+                </picture>
             </div>
               <h2 class="production__title">Процесс производства</h2>
               <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>

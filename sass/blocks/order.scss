@@ -90,7 +90,6 @@
     }
 
     @media($w-desktop) {
-
     }
   }
 }
@@ -201,7 +200,21 @@
   background: transparent;
   border: none;
   border-bottom: 2px solid #000000;
+  font-family: $font-verdana;
   @include font-size-rem(16px);
+  @include line-height(16px, 18px);
+  transition: all .3s linear;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+  }
+
+  &:invalid {
+    border-color: #f0b1b1;
+  }
+
 
   &::placeholder {
     font-family: $font-verdana;
@@ -210,6 +223,7 @@
 
     @media($w-tablet) {
       @include font-size-rem(18px);
+      @include line-height(18px, 18px);
     }
   }
 
@@ -218,6 +232,7 @@
     flex-basis: 65%;
     padding: 16px 0 17px;
     @include font-size-rem(18px);
+    @include line-height(18px, 18px);
   }
 
   @media($w-desktop) {
@@ -242,6 +257,13 @@
       margin-bottom: 90px;
     }
   }
+
+  &[type="tel"] {
+    background: transparent url("../img/icon-phone.svg") no-repeat 98% 50%;
+  }
+  &[type="email"] {
+    background: transparent url("../img/icon-mail.svg") no-repeat 99% 50%;
+  }
 }
 .order__label {
   display: block;
@@ -251,6 +273,15 @@
   @include font-size-rem(16px);
   @include line-height(16px, 18px);
   cursor: pointer;
+
+  &:hover::before {
+    border-color: #62d1ba;
+    transition: all .3s ease-in;
+  }
+
+  &:active::before {
+    border-color: #c7c7c7;
+  }
 
   &--radio {
     position: relative;

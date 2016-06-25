@@ -1,19 +1,29 @@
 .section-catalog {
   display: block;
+  padding: 29px;
   color: #ffffff;
   text-decoration: none;
   &--interior {
-    background: #63d1bb;
+    background: #63d1bb url("../img/icon-interior.svg") no-repeat;
+    background-position: right 36px center;
   }
   &--toys {
-    background: #56c3b2;
+    background: #56c3b2 url("../img/icon-toy.svg") no-repeat;
+    background-position: right 27px center;
+
+    @media($w-tablet) {
+      background-position: right 33px center;
+    }
+
+    @media($w-desktop) {
+      background-position: right 35px center;
+    }
   }
 
-  min-height: 103px;
-}
-
-@media($w-tablet) {
-  .section-catalog {
-    width: 50%;
+    @media($w-tablet) {
+      width: 50%;
+      padding: 31px 40px;
   }
 }
+
+

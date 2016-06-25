@@ -12,11 +12,12 @@
   position: relative;
   display: flex;
   flex-flow: wrap column;
-  @include container;
+
 
   @media($w-tablet) {
     flex-flow: wrap row;
     position: relative;
+    @include container;
   }
 }
 

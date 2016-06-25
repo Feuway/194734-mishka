@@ -32,8 +32,8 @@
   }
 }
 .contacts__title {
-  margin-top: 40px;
-  margin-bottom: 30px;
+  margin-top: 38px;
+  margin-bottom: 27px;
   @include title;
 
   @media($w-tablet) {
@@ -51,20 +51,38 @@
 }
 .contacts__content {
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   font-family: $font-opensans;
   @include font-size-rem(14px);
   @include line-height(14px, 30px);
 
   &--left {
-
     width: 78px;
   }
 
   &--right {
-
     width: 183px;
   }
+
+  &--mail:after {
+    content: "";
+    position: relative;
+    bottom: 2px;
+    left: 0;
+    display: block;
+    width: 154px;
+    height: 1px;
+    background: #62d1ba;
+
+    &:hover {
+      background: #46c1ae;
+    }
+
+    @media($w-tablet) {
+      width: 177px;
+    }
+  }
+
 
   @media($w-tablet) {
     margin-right: 68px;
@@ -79,8 +97,8 @@
 }
 .contacts__map {
   height: 457px;
-  margin-bottom: 38px;
-  background: #444444 url("../../img/map-mobile@1x.jpg") no-repeat 0 0;
+  margin-bottom: 39px;
+  background: #444444 url("../img/map-mobile@1x.jpg") no-repeat 0 0;
 
   @media($w-tablet) {
     flex-basis: 100%;
@@ -110,5 +128,22 @@
     margin-top: 40px;
     margin-bottom: 105px;
     margin-left: 0;
+  }
+}
+
+.contacts__mail {
+  color: $color-text;
+  text-decoration: none;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: .3;
+  }
+
+  &:hover .contacts__content--mail:after {
+    background: #46c1ae;
   }
 }
