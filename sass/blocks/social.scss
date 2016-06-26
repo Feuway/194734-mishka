@@ -1,19 +1,29 @@
 .social {
   display: flex;
+  justify-content: space-between;
   width: 163px;
   @include no-list;
-}
-.social li {
-  display: block;
+  margin-top: 25px;
+  margin-bottom: 29px;
 }
 .social__btn {
+  display: block;
   width: 30px;
   height: 30px;
-  &--inst {
+
+  svg {
+    width: 100%;
+    height: 100%;
+    transition: all .2s;
   }
-  &--fb {
+
+  &:hover svg {
+    fill: $color-add;
   }
-  &--tw {
+
+  &:active svg {
+    fill: $color-add;
+    fill-opacity: .3;
   }
 }
 

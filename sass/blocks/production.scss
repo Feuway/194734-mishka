@@ -36,12 +36,35 @@
   }
 }
 .production__video {
+  position: relative;
   width: 260px;
   height: 150px;
 
-  img {
-    // width: 100%;
-    // height: auto;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 101px;
+    height: 76px;
+    margin-top: -38px;
+    margin-left: -50px;
+    background: url("../../img/sprites/icon-play.svg");
+    transition: all .2s;
+
+    // &:hover {
+    //   transform: scale(1.2);
+    // }
+  }
+
+  &:hover:before {
+    transform: scale(1.2);
+  }
+
+  &:active:before {
+    opacity: .3;
+    transform: scale(.8);
   }
 
   @media($w-tablet) {

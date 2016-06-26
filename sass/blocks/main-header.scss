@@ -3,20 +3,20 @@
   border-top: 1px solid #ececec;
 
   @media($w-tablet) {
+    height: 88px;
     border-top: none;
     border-bottom: 1px solid #ececec;
   }
 }
 
 .main-header__wrap {
-  position: relative;
   display: flex;
-  flex-flow: wrap column;
-
+  flex-flow: column;
 
   @media($w-tablet) {
     flex-flow: wrap row;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
     @include container;
   }
 }
@@ -31,6 +31,7 @@
   background: #ffffff url("../../img/icon-menu-close.svg") no-repeat;
   font-size: 0;
   cursor: pointer;
+
   &--closed {
     background: #ffffff url("../../img/icon-menu-open.svg") no-repeat;
   }
@@ -40,4 +41,12 @@
   }
 }
 @media($w-desktop) {
+}
+
+.main-header__delivery {
+  display: none;
+
+  @media($w-tablet) {
+    display: block;
+  }
 }
