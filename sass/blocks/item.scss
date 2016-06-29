@@ -10,13 +10,12 @@
   }
 }
 .item__title {
-  margin-top: 28px;
-  margin-bottom: 14px;
+  margin: 29px 0 9px;
   @include title;
 
   @media($w-tablet) {
     float: left;
-    margin-top: 42px;
+    margin-top: 44px;
     margin-bottom: 54px;
   }
 
@@ -25,12 +24,13 @@
     z-index: 10;
     float: none;
     display: inline-block;
-    margin-top: 127px;
+    margin-top: 124px;
+    margin-bottom: 51px;
   }
 }
 .item__week {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
   color: #63d1bb;
   font-family: $font-opensans;
   font-weight: bold;
@@ -52,19 +52,19 @@
 }
 .item__description {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 19px;
   font-family: $font-opensans;
   @include font-size-rem(14px);
   @include line-height(14px, 24px);
 
   @media($w-tablet) {
-    margin-bottom: 50px;
+    margin-bottom: 36px;
     @include font-size-rem(16px);
     @include line-height(16px, 30px);
   }
 
   @media($w-desktop) {
-    margin-bottom: 64px;
+    margin-bottom: 60px;
   }
 }
 .item__features {
@@ -77,20 +77,28 @@
   td {
     padding: 10px 0;
     border-bottom: 1px solid #818181;
+
+    @media($w-tablet) {
+      padding: 9px 0;
+    }
   }
 
   td:last-child {
     width: 193px;
-    padding-left: 30px;
+    padding-left: 37px;
+
+    @media($w-tablet) {
+      padding-left: 31px;
+    }
   }
 
   @media($w-tablet) {
-    margin-bottom: 58px;
+    margin-bottom: 55px;
     @include font-size-rem(15px);
   }
 
   @media($w-desktop) {
-    margin-bottom: 110px;
+    margin-bottom: 106px;
   }
 }
 .item__photo {
@@ -99,7 +107,7 @@
 
   @media($w-tablet) {
     position: absolute;
-    top: 150px;
+    top: 152px;
     right: 0;
     width: 333px;
     height: 404px;
@@ -107,7 +115,7 @@
 
   @media($w-desktop) {
     position: absolute;
-    top: 80px;
+    top: 71px;
     right: 0;
     width: 525px;
     height: 636px;
@@ -129,8 +137,7 @@
 }
 .item__price {
   display: block;
-  margin-top: 28px;
-  margin-bottom: 28px;
+  margin: 25px 0;
   font-family: $font-verdana;
   font-weight: bold;
   @include font-size-rem(14px);
@@ -143,14 +150,14 @@
   }
 }
 .item__btn {
-  margin-bottom: 41px;
+  margin-bottom: 35px;
 
   @media($w-tablet) {
-    margin-bottom: 69px;
+    margin-bottom: 52px;
   }
 
   @media($w-desktop) {
-    margin-bottom: 96px;
+    margin-bottom: 73px;
   }
 }
 

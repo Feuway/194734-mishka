@@ -11,43 +11,70 @@
     <header class="main-header">
       <div class="main-header__wrap">
         <a class="logo" href="index.html">
-          <img src="http://placehold.it/90x35" alt="Мишка">
+          <picture>
+            <source media="(min-width: 1100px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Вязанные корзинки">
+          </picture>
         </a>
         <button class="main-header__toggle" type="button">Открыть меню</button>
-        <nav class="main-nav">
+        <nav class="main-nav  main-nav--right">
           <ul class="main-nav__list">
-            <li class="main-nav__list-item">
-                <a href="catalog.html">Каталог товаров</a>
+            <li>
+              <a class="main-nav__list-item  main-nav__list-item--right" href="#">
+                <svg class="main-nav__icon">
+                  <use xlink:href="img/sprites.svg#icon-search"></use>
+                </svg>
+              Поиск по сайту</a>
             </li>
-            <li class="main-nav__list-item">
-              <a href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="main-nav__list-item">
-              <a href="#">Поиск по сайту</a>
-            </li>
-            <li class="main-nav__list-item">
-              <a href="#">Корзина:
-                <span>пока пуста</span>
+            <li>
+              <a class="main-nav__list-item  main-nav__list-item--right" href="#">
+                <svg class="main-nav__icon">
+                  <use xlink:href="img/sprites.svg#icon-cart"></use>
+                </svg>
+              Корзина: <span> пока пуста</span>
               </a>
             </li>
           </ul>
         </nav>
+        <nav class="main-nav  main-nav--left">
+          <ul class="main-nav__list">
+            <li>
+                <a class="main-nav__list-item  main-nav__list-item--left" href="catalog.html"><svg class="main-nav__icon"></use>
+                </svg>Каталог товаров</a>
+            </li>
+            <li>
+              <a class="main-nav__list-item  main-nav__list-item--left" href="form.html"><svg class="main-nav__icon"></svg>Вязание на заказ</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="main-nav  main-nav--add">
+          <ul class="main-nav__list">
+            <li>
+              <a class="main-nav__list-item  main-nav__list-item--add" href="#">Новые поступления</a>
+            </li>
+            <li>
+              <a class="main-nav__list-item  main-nav__list-item--add" href="#">Распродажа</a>
+            </li>
+          </ul>
+        </nav>
+        <span class="main-header__delivery">Бесплатная доставка по России</span>
       </div>
     </header>
     <main>
-      <section class="main-decription">
-        <div class="main-decription__wrap">
-          <h1 class="main-decription__title">Милые штуки ручной работы для дома</h1>
-          <div class="main-decription__catalogs">
-            <a class="section-catalog  section-catalog--interior" href="#">Предмет интерьера</a>
-            <a class="section-catalog  section-catalog--toys" href="#">Детские игрушки</a>
+      <section class="main-description">
+        <div class="main-description__wrap">
+          <h1 class="main-description__title">Милые штуки ручной работы для дома</h1>
+          <div class="main-description__catalogs">
+            <a class="section-catalog  section-catalog--interior" href="#">Предмет <br> интерьера</a>
+            <a class="section-catalog  section-catalog--toys" href="#">Детские <br>игрушки</a>
           </div>
         </div>
       </section>
       <section class="top-item">
         <div class="top-item__wrap">
           <article class="item">
-            <h2 class="item__title">Вязнные корзинки</h2>
+            <h2 class="item__title">Вязаные корзинки</h2>
             <b class="item__week">Товар недели</b>
             <div class="item_info">
               <p class="item__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
@@ -66,7 +93,11 @@
                 </tr>
               </table>
               <div class="item__photo">
-                <img src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки">
+                <picture>
+                  <source media="(min-width: 1100px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                  <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+                </picture>
               </div>
               <span class="item__price">Цена: 990 руб.</span>
               <a href="#" class="item__btn  btn">Заказать</a>
@@ -88,21 +119,21 @@
         </div>
       </section>
       <section class="reviews">
-        <div class="reviews__wrap">
-          <h2 class="reviews__title">Отзывы</h2>
-          <blockquote class="review">
-              <p class="review__comment">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-            <footer class="review__author">
-              <cite class="review__author-name">Анастасия Красильникова</cite>
-              <cite class="review__author-nickname">@misssssiskras</cite>
-            </footer>
-          </blockquote>
-          <div class="reviews__switchs">
-            <button class="reviews__switch  reviews__switch--left"></button>
-            <button class="reviews__switch  reviews__switch--right"></button>
+          <div class="reviews__wrap">
+            <h2 class="reviews__title">Отзывы</h2>
+            <blockquote class="review">
+                <p class="review__comment">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+              <footer class="review__author">
+                <cite class="review__author-name">Анастасия Красильникова</cite>
+                <cite class="review__author-nickname">@misssssiskras</cite>
+              </footer>
+            </blockquote>
+            <div class="reviews__switchs">
+              <button class="reviews__switch  reviews__switch--left" type="button"></button>
+              <button class="reviews__switch  reviews__switch--right" type="button"></button>
+            </div>
+            <a href="#" class="reviews__btn  btn">Написать</a>
           </div>
-          <a href="#" class="reviews__btn  btn">Написать</a>
-        </div>
       </section>
       <section class="contacts">
         <div class="contacts__wrap-desktop">
@@ -110,14 +141,18 @@
             <h2 class="contacts__title">Контакты</h2>
             <div class="contacts__content">
               <span class="contacts__content--left">e-mail:</span>
-              <span class="contacts__content--right">info@mimimishkashop.ru</span>
+              <span class="contacts__content--right contacts__content--mail">
+                <a class="contacts__mail" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+              </span>
             </div>
             <div class="contacts__content">
               <span class="contacts__content--left">адрес:</span>
               <span class="contacts__content--right">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span>
             </div>
           </div>
-          <div class="contacts__map"></div>
+          <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6258160845468!2d30.323251347570512!3d59.93857725732614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCAxMDEsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1466669879694" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
           <a href="" class="contacts__btn  btn">Напишите нам</a>
         </div>
       </section>
@@ -125,23 +160,39 @@
     <footer class="main-footer">
       <div class="main-footer__wrap">
         <a class="footer-logo" href="index.html">
-          <img src="img/logo-mobile.svg" width="108" height="36" alt="">
+          <svg>
+            <use xlink:href="img/sprites.svg#logo-footer"></use>
+          </svg>
         </a>
         <ul class="social">
-          <li href="#" class="social__btn  social__btn--inst">
-            <a href="#"></a>
+          <li>
+            <a class="social__btn" href="#">
+              <svg>
+                <use xlink:href="img/sprites.svg#icon-insta"></use>
+              </svg>
+            </a>
           </li>
-          <li href="#" class="social__btn  social__btn--fb">
-            <a href="#"></a>
+          <li>
+            <a class="social__btn" href="#">
+              <svg>
+                <use xlink:href="img/sprites.svg#icon-fb"></use>
+              </svg>
+            </a>
           </li>
-          <li href="#" class="social__btn  social__btn--tw">
-            <a href="#"></a>
+          <li>
+            <a class="social__btn" href="#">
+              <svg>
+                <use xlink:href="img/sprites.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
         <div class="developed">
-          <p>Разработано</p>
+          <a class="developed__title" href="#">Разработано</a>
           <a class="developed__logo" href="#">
-            <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="logo">
+            <svg>
+              <use xlink:href="img/sprites.svg#logo-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>

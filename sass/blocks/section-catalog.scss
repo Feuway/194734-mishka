@@ -1,19 +1,84 @@
 .section-catalog {
+  position: relative;
   display: block;
+  padding: 29px;
   color: #ffffff;
   text-decoration: none;
+  transition: all .1s linear;
+
+  &:before {
+    content: "";
+    position: absolute;
+    filter: opacity(.5);
+  }
+
+  &:hover:before {
+    filter: opacity(.7);
+  }
+
+  &:active:before {
+    filter: opacity(.3);
+  }
+
   &--interior {
     background: #63d1bb;
+
+    &:hover {
+      background: #59d5bc;
+    }
+
+    &:active {
+      background: #59d5bc;
+      color: rgba(255, 255, 255, .3);
+    }
+
+    &:before {
+      top: 23px;
+      right: 36px;
+      width: 42px;
+      height: 62px;
+      background: url("../img/icon-interior.svg") no-repeat;
+
+      @media($w-tablet) {
+        top: 30px;
+      }
+    }
   }
+
   &--toys {
     background: #56c3b2;
+
+    &:hover {
+      background: #46c1ae;
+    }
+
+    &:active {
+      background: #46c1ae;
+      color: rgba(255, 255, 255, .3);
+    }
+
+    &:before {
+      top: 21px;
+      right: 27px;
+      width: 61px;
+      height: 61px;
+      background: url("../img/icon-toy.svg") no-repeat;
+
+      @media($w-tablet) {
+        top: 31px;
+        right: 33px;
+      }
+
+      @media($w-desktop) {
+        right: 35px;
+      }
+    }
   }
 
-  min-height: 103px;
-}
-
-@media($w-tablet) {
-  .section-catalog {
-    width: 50%;
+    @media($w-tablet) {
+      width: 50%;
+      padding: 31px 40px;
   }
 }
+
+

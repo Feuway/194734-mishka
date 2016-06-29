@@ -6,6 +6,7 @@
 
   @media($w-tablet) {
     @include font-size-rem(16px);
+    @include line-height(16px, 30px);
   }
 
   @media($w-desktop) {
@@ -18,9 +19,14 @@
 }
 .review__author {
   width: 260px;
-  margin-top: 5px;
+  margin-top: 15px;
+
+  @media($w-tablet) {
+    margin-top: 5px;
+  }
 }
 .review__author-name {
+  color: #000000;
   font-weight: bold;
   line-height: normal;
   font-style: normal;

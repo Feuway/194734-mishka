@@ -1,31 +1,58 @@
 .production {
   display: flex;
   flex-flow: wrap column;
-  margin-bottom: 58px;
   border: 1px solid #ececec;
 
-  @media($w-tablet) {
-    // display: flex;
-    // flex-flow: wrap column;
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    transition: all .2s ease-in;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .1);
+    transition: all .1s ease-out;
   }
 
   @media($w-desktop) {
     display: block;
-    margin-bottom: 0;
   }
 }
 .production__title {
+  position: relative;
   order: -1;
+  margin: 0;
   margin-left: 90px;
+  padding: 23px 0 24px;
   font-family: $font-verdana;
-  font-weight: bold;
   @include font-size-rem(16px);
   @include line-height(16px, 24px);
   text-decoration: none;
 
+  &:after {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: -57px;
+    width: 32px;
+    height: 22px;
+    background: url("../../img/icon-video.svg") center;
+
+    @media($w-tablet) {
+      top: 2px;
+      left: -60px;
+    }
+
+    @media($w-desktop) {
+      top: -50px;
+      left: 0px;
+    }
+  }
+
   @media($w-tablet) {
     order: 0;
+    margin-top: 41px;
     margin-left: 105px;
+    padding: 0;
     @include font-size-rem(18px);
     @include line-height(18px, 24px);
   }
@@ -40,11 +67,9 @@
   }
 }
 .production__video {
-
-  img {
-    width: 100%;
-    height: auto;
-  }
+  position: relative;
+  width: 260px;
+  height: 150px;
 
   @media($w-tablet) {
    width: 668px;
@@ -56,16 +81,37 @@
     width: 682px;
   }
 }
+.production__video-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 101px;
+  height: 76px;
+  margin-top: -38px;
+  margin-left: -50px;
+  background: url("../../img/sprites/icon-play.svg");
+  transition: all .2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    opacity: .3;
+    transform: scale(.8);
+  }
+}
 .production__description {
   margin: 0;
-  padding: 30px;
+  padding: 30px 30px 25px;
   color: $color-text;
   font-family: $font-opensans;
   @include font-size-rem(14px);
   @include line-height(14px, 24px);
 
   @media($w-tablet) {
-    padding: 39px 42px;
+    padding: 35px 42px;
     @include font-size-rem(16px);
     @include line-height(16px, 30px);
   }
@@ -82,9 +128,14 @@
   width: auto;
   margin: 0 30px 32px;
 
+@media($w-tablet) {
+    margin-bottom: 45px;
+  }
+
   @media($w-desktop) {
     float: right;
     width: 226px;
     margin-right: 56px;
+    margin-bottom: 45px;
   }
 }
