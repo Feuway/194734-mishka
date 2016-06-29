@@ -13,8 +13,6 @@
   }
 
   &--left {
-    @media($w-tablet) {
-    }
 
     @media($w-desktop) {
       order: -1;
@@ -55,9 +53,6 @@
   color: $color-title;
   text-decoration: none;
 
-  &--right {
-  }
-
   &:hover {
     color: rgba(0, 0, 0, .6);
   }
@@ -73,11 +68,13 @@
     border: none;
   }
 }
+
 .main-nav__list-item--right {
   padding-top: 32px;
   padding-bottom: 32px;
   border-left: 1px solid #ececec;
 }
+
 .main-nav__list-item--left {
   @media($w-tablet) {
     @include font-size-rem(14px);
@@ -93,6 +90,7 @@
     @include line-height(16px, 24px);
   }
 }
+
 .main-nav__list-item--add {
   @media($w-desktop) {
     width: 188px;
@@ -100,6 +98,23 @@
     @include line-height(14px, 24px);
   }
 }
+
+.main-nav__list-item--no-icon {
+
+  padding-left: calc(16% + 45px);
+
+  /* Для старых браузеров можно использовать это
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    height: 20px;
+    width: 45px;
+  }
+  */
+}
+
+
 .main-nav__icon {
   width: 20px;
   height: 21px;
