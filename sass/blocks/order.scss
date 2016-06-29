@@ -120,6 +120,9 @@
 }
 
 .order__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
   color: #63d1bb;
   font-family: $font-opensans;
@@ -127,6 +130,16 @@
   @include font-size-rem(16px);
   @include line-height(16px, 16px);
   text-transform: uppercase;
+
+  &:after {
+    content: "";
+    width: 198px;
+    border-bottom: 1px solid $color-main;
+
+    @media($w-tablet) {
+      content: none;
+    }
+  }
 
   &--type {
     margin-bottom: 33px;
@@ -146,6 +159,7 @@
 
   &--phone {
     margin-bottom: 10px;
+
     @media($w-tablet) {
       margin-top: 20px;
     }
@@ -153,6 +167,15 @@
 
   &--email {
     margin-bottom: 9px;
+
+    &:after {
+      width: 179px;
+
+      @media($w-tablet) {
+        content: none;
+      }
+    }
+
     @media($w-tablet) {
       margin-top: 20px;
     }
