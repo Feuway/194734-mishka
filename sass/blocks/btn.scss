@@ -12,7 +12,8 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all .3s ease-in;
+  transition: background-color .25s ease-in,
+              color 0.25s ease-in;
 
 
   &:hover {
