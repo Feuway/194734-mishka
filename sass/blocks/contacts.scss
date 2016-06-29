@@ -13,14 +13,39 @@
     margin: 0 auto;
     padding-left: 175px;
     padding-right: 0;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 133px;
+      left: 63px;
+      width: 47px;
+      height: 81px;
+      background: url("../../img/icon-flag.svg") center;
+    }
   }
 }
 .contacts__wrap {
   @include container;
 
   @media($w-tablet) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 46px;
+      right: 3px;
+      width: 47px;
+      height: 81px;
+      background: url("../../img/icon-flag.svg") center;
+
+      @media($w-desktop) {
+        content: none;
+      }
+    }
   }
 
   @media($w-desktop) {
@@ -56,12 +81,24 @@
   @include font-size-rem(14px);
   @include line-height(14px, 30px);
 
+  &:hover .contacts__content--mail:after {
+    background: #46c1ae;
+  }
+
+  &:active .contacts__content--mail:after {
+    opacity: .3;
+  }
+
   &--left {
     width: 78px;
   }
 
   &--right {
-    width: 183px;
+    width: 168px;
+
+    @media($w-tablet) {
+      width: 188px;
+    }
   }
 
   &--mail:after {
@@ -70,19 +107,9 @@
     bottom: 2px;
     left: 0;
     display: block;
-    width: 154px;
-    height: 1px;
-    background: #62d1ba;
-
-    &:hover {
-      background: #46c1ae;
-    }
-
-    @media($w-tablet) {
-      width: 177px;
-    }
+    width: 100%;
+    border-bottom: 1px solid $color-main;
   }
-
 
   @media($w-tablet) {
     margin-right: 68px;
@@ -141,9 +168,5 @@
 
   &:active {
     opacity: .3;
-  }
-
-  &:hover .contacts__content--mail:after {
-    background: #46c1ae;
   }
 }

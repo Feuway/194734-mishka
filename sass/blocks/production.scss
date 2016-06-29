@@ -3,11 +3,22 @@
   flex-flow: wrap column;
   border: 1px solid #ececec;
 
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
+    transition: all .2s ease-in;
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .1);
+    transition: all .1s ease-out;
+  }
+
   @media($w-desktop) {
     display: block;
   }
 }
 .production__title {
+  position: relative;
   order: -1;
   margin: 0;
   margin-left: 90px;
@@ -16,6 +27,26 @@
   @include font-size-rem(16px);
   @include line-height(16px, 24px);
   text-decoration: none;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 34px;
+    left: -57px;
+    width: 32px;
+    height: 22px;
+    background: url("../../img/icon-video.svg") center;
+
+    @media($w-tablet) {
+      top: 2px;
+      left: -60px;
+    }
+
+    @media($w-desktop) {
+      top: -50px;
+      left: 0px;
+    }
+  }
 
   @media($w-tablet) {
     order: 0;

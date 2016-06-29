@@ -6,7 +6,7 @@
     margin: 0;
   }
 }
-.developed p {
+.developed__title {
   margin-top: 29px;
   margin-bottom: 33px;
   margin-right: 25px;
@@ -15,6 +15,12 @@
   font-weight: bold;
   @include font-size-rem(18px);
   @include line-height(18px, 18px);
+  text-decoration: none;
+  transition: all .2s;
+
+  &:active {
+    opacity: .3;
+  }
 }
 .developed__logo {
   width: 27px;

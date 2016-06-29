@@ -10,6 +10,8 @@
 }
 
 .main-header__wrap {
+  position: relative;
+  z-index: 10;
   display: flex;
   flex-flow: column;
 
@@ -28,12 +30,12 @@
   width: 21px;
   height: 21px;
   border: none;
-  background: #ffffff url("../../img/icon-menu-close.svg") no-repeat;
+  background: #ffffff url("../img/icon-menu-close.svg") no-repeat;
   font-size: 0;
   cursor: pointer;
 
   &--closed {
-    background: #ffffff url("../../img/icon-menu-open.svg") no-repeat;
+    background: #ffffff url("../img/icon-menu-open.svg") no-repeat;
   }
 
   @media($w-tablet) {

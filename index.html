@@ -21,11 +21,18 @@
         <nav class="main-nav  main-nav--right">
           <ul class="main-nav__list">
             <li>
-              <a class="main-nav__list-item" href="#">Поиск по сайту</a>
+              <a class="main-nav__list-item  main-nav__list-item--right" href="#">
+                <svg class="main-nav__icon">
+                  <use xlink:href="img/sprites.svg#icon-search"></use>
+                </svg>
+              Поиск по сайту</a>
             </li>
             <li>
-              <a class="main-nav__list-item" href="#">Корзина:
-                <span>пока пуста</span>
+              <a class="main-nav__list-item  main-nav__list-item--right" href="#">
+                <svg class="main-nav__icon">
+                  <use xlink:href="img/sprites.svg#icon-cart"></use>
+                </svg>
+              Корзина: <span> пока пуста</span>
               </a>
             </li>
           </ul>
@@ -33,20 +40,21 @@
         <nav class="main-nav  main-nav--left">
           <ul class="main-nav__list">
             <li>
-                <a class="main-nav__list-item" href="catalog.html">Каталог товаров</a>
+                <a class="main-nav__list-item  main-nav__list-item--left" href="catalog.html"><svg class="main-nav__icon"></use>
+                </svg>Каталог товаров</a>
             </li>
             <li>
-              <a class="main-nav__list-item" href="form.html">Вязание на заказ</a>
+              <a class="main-nav__list-item  main-nav__list-item--left" href="form.html"><svg class="main-nav__icon"></svg>Вязание на заказ</a>
             </li>
           </ul>
         </nav>
         <nav class="main-nav  main-nav--add">
           <ul class="main-nav__list">
             <li>
-              <a class="main-nav__list-item" href="#">Новые поступления</a>
+              <a class="main-nav__list-item  main-nav__list-item--add" href="#">Новые поступления</a>
             </li>
-            <li">
-              <a class="main-nav__list-item" href="#">Распродажа</a>
+            <li>
+              <a class="main-nav__list-item  main-nav__list-item--add" href="#">Распродажа</a>
             </li>
           </ul>
         </nav>
@@ -180,7 +188,7 @@
           </li>
         </ul>
         <div class="developed">
-          <p>Разработано</p>
+          <a class="developed__title" href="#">Разработано</a>
           <a class="developed__logo" href="#">
             <svg>
               <use xlink:href="img/sprites.svg#logo-htmlacademy"></use>
