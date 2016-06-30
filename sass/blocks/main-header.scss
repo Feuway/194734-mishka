@@ -33,16 +33,24 @@
   background: #ffffff url("../img/icon-menu-close.svg") no-repeat;
   font-size: 0;
   cursor: pointer;
+  outline: 0;
+  transition: opacity .2s ease;
+
+  &:hover {
+    opacity: .6;
+  }
+
+  &:active {
+    opacity: .3;
+  }
 
   &--closed {
-    background: #ffffff url("../img/icon-menu-open.svg") no-repeat;
+    background: #ffffff url("../img/icon-menu-open.svg") no-repeat center;
   }
 
   @media($w-tablet) {
     display: none;
   }
-}
-@media($w-desktop) {
 }
 
 .main-header__delivery {
