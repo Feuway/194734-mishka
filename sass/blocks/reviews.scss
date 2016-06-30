@@ -61,6 +61,7 @@
 .reviews__switchs {
   margin-top: 25px;
   margin-bottom: 38px;
+
   @media($w-tablet) {
     position: absolute;
     bottom: 0;
@@ -80,6 +81,8 @@
   border: 1px solid #dcdcdc;
   background: #ffffff;
   outline: 0;
+  cursor: pointer;
+  transition: opacity .2s;
 
   &--left {
     border-right: none;

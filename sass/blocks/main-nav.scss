@@ -16,7 +16,6 @@
 
     @media($w-desktop) {
       order: -1;
-      // width: 450px;
     }
   }
 
@@ -25,8 +24,11 @@
 
     @media($w-desktop) {
       display: flex;
-      // width: 450px;
     }
+  }
+
+  &--closed {
+    display: none;
   }
 }
 .main-nav--left .main-nav__icon {
@@ -102,6 +104,10 @@
 .main-nav__list-item--no-icon {
 
   padding-left: calc(16% + 45px);
+
+   @media($w-tablet) {
+    padding-left: 0;
+  }
 
   /* Для старых браузеров можно использовать это
   &::before {

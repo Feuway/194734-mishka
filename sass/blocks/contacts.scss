@@ -98,7 +98,7 @@
     width: 168px;
 
     @media($w-tablet) {
-      width: 188px;
+      width: 192px;
     }
   }
 
@@ -113,7 +113,7 @@
   }
 
   @media($w-tablet) {
-    margin-right: 68px;
+    margin-right: 64px;
     margin-bottom: 55px;
     @include font-size-rem(16px);
   }
