@@ -17,6 +17,21 @@ var run =  require("run-sequence");
 var del = require("del");
 
 
+gulp.task("clean", function() {
+  return del("build");
+});
+
+gulp.task("copy", function() {
+  return gulp.src([
+    "fonts/**/*.{woff, woff2}",
+    "img/**",
+    "js/**",
+    "*.html"
+  ], {
+    base: "."
+  })
+  .pipe(gulp.dest("build"));
+});
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -60,37 +75,6 @@ gulp.task("sprites", function() {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("serve", ["style"], function() {
-  server.init({
-    server: ".",
-    notify: false,
-    open: true,
-    ui: false
-  });
-  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
-});
-
-gulp.task("build", function(fn) {
-  run("style", "images", "sprites", fn);
-});
-
-gulp.task("copy", function() {
-  return gulp.src([
-    "fonts/**/*.{woff, woff2}",
-    "img/**",
-    "js/**",
-    "*.html"
-  ], {
-    base: "."
-  })
-  .pipe(gulp.dest("build"));
-});
-
-gulp.task("clean", function() {
-  return del("build");
-});
-
 gulp.task("build", function(fn) {
   run(
     "clean",
@@ -100,4 +84,15 @@ gulp.task("build", function(fn) {
     "sprites",
     fn
   );
+});
+
+gulp.task("serve", ["style"], function() {
+  server.init({
+    server: ".",
+    notify: false,
+    open: true,
+    ui: false
+  });
+  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("*.html").on("change", server.reload);
 });
