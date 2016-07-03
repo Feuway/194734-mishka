@@ -126,11 +126,15 @@
   height: 457px;
   margin-bottom: 41px;
   background: #444444 url("../img/map-mobile@1x.jpg") no-repeat 0 0;
+  background-size: 100%;
+
 
   @media($w-tablet) {
     flex-basis: 100%;
-    background-size: 100%;
     margin-bottom: 55px;
+    background-image: url("../img/map-tablet@1x.jpg");
+    background-size: 100%;
+
   }
 
   @media($w-desktop) {
@@ -140,6 +144,8 @@
     width: 525px;
     height: 457px;
     margin: 0;
+    background-image: url("../img/map-desktop@1x.jpg");
+    background-size: 100%;
   }
 }
 .contacts__btn {

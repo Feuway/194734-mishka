@@ -9,8 +9,13 @@
 
   @media($w-desktop) {
     display: block;
-    width: 316px;
+    width: 315px;
     margin-bottom: 57px;
+    margin-right: 52px;
+  }
+
+  &:nth-child(3n) {
+    margin-right: 0;
   }
 
   &:hover {
@@ -19,7 +24,6 @@
 
   &:active {
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .1);
-
   }
 }
 

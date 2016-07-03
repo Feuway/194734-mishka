@@ -17,8 +17,4 @@
   display: flex;
   flex-wrap: wrap;
   @include container;
-
-  @media($w-desktop) {
-    justify-content: space-between;
-  }
 }

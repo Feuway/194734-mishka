@@ -38,6 +38,7 @@
 
   &--type {
     padding-bottom: 15px;
+
   }
 
   &--name {
@@ -216,14 +217,6 @@
 
   &--email {
     margin-bottom: 9px;
-
-    &:after {
-      width: 179px;
-
-      @media($w-tablet) {
-        content: none;
-      }
-    }
 
     @media($w-tablet) {
       margin-top: 20px;
