@@ -10,13 +10,15 @@
   }
 }
 .item__title {
-  margin: 29px 0 9px;
+  margin: 25px 0 9px;
+  word-spacing: -1px;
   @include title;
 
   @media($w-tablet) {
     float: left;
-    margin-top: 44px;
-    margin-bottom: 54px;
+    margin-top: 46px;
+    margin-bottom: 51px;
+    margin-left: -5px;
   }
 
   @media($w-desktop) {
@@ -25,7 +27,8 @@
     float: none;
     display: inline-block;
     margin-top: 124px;
-    margin-bottom: 51px;
+    margin-bottom: 48px;
+    vertical-align: top;
   }
 }
 .item__week {
@@ -40,19 +43,20 @@
 
   @media($w-tablet) {
     float: right;
-    width: 100px;
-    margin-top: 55px;
+    width: 124px;
+    margin-top: 57px;
     text-align: center;
   }
 
   @media($w-desktop) {
     float: left;
+    width: 104px;
     margin: 140px 42px 0 30px;
   }
 }
 .item__description {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
   font-family: $font-opensans;
   @include font-size-rem(14px);
   @include line-height(14px, 24px);
@@ -64,7 +68,7 @@
   }
 
   @media($w-desktop) {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
 }
 .item__features {
@@ -76,7 +80,7 @@
 
   td {
     padding: 10px 0;
-    border-bottom: 1px solid #818181;
+    border-bottom: 1px solid #ececec;
 
     @media($w-tablet) {
       padding: 9px 0;
@@ -85,20 +89,20 @@
 
   td:last-child {
     width: 193px;
-    padding-left: 37px;
+    padding-left: 32px;
 
     @media($w-tablet) {
-      padding-left: 31px;
+      padding-left: 26px;
     }
   }
 
   @media($w-tablet) {
-    margin-bottom: 55px;
+    margin-bottom: 56px;
     @include font-size-rem(15px);
   }
 
   @media($w-desktop) {
-    margin-bottom: 106px;
+    margin-bottom: 108px;
   }
 }
 .item__photo {
@@ -140,8 +144,8 @@
   margin: 25px 0;
   font-family: $font-verdana;
   font-weight: bold;
-  @include font-size-rem(14px);
-  @include line-height(14px, 24px);
+  @include font-size-rem(16px);
+  @include line-height(16px, 24px);
   text-align: center;
 
   @media($w-tablet) {
@@ -162,14 +166,14 @@
 }
 
 @media($w-tablet) {
-  .item_info {
+  .item__info {
     width: 292px;
     clear: both;
   }
 }
 
 @media($w-desktop) {
-  .item_info {
+  .item__info {
     margin-left: 176px;
   }
 }

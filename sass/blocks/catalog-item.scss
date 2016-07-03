@@ -27,6 +27,11 @@
   width: 260px;
   height: 195px;
 
+  img {
+    width: 100%;
+    height: auto;
+  }
+
   @media($w-tablet) {
     width: 334px;
     height: 333px;
@@ -35,13 +40,13 @@
   @media($w-desktop) {
     float: none;
     width: 315px;
-    height: 462px;
+    height: 460px;
   }
 }
 .catalog-item__info {
   display: flex;
   flex-flow: wrap;
-  padding: 27px 27px 30px;
+  padding: 24px 27px 30px;
   border: 1px solid #ececec;
 
   @media($w-tablet) {
@@ -50,6 +55,7 @@
 
   @media($w-desktop) {
     width: auto;
+    padding: 24px 27px 30px;
   }
 }
 .catalog-item__title {
@@ -64,17 +70,19 @@
   }
 }
 .catalog-item__description {
-  margin-bottom: 22px;
+  margin-bottom: 19px;
+
   @media($w-tablet) {
-    min-height: 232px;
+    min-height: 235px;
     margin: 0;
   }
   @media($w-desktop) {
-    min-height: 88px;
+    min-height: 98px;
   }
 }
 .catalog-item__characteristics {
   margin: 0;
+  margin-top: 5px;
   color: $color-text;
   font-family: $font-opensans;
   @include font-size-rem(14px);

@@ -9,7 +9,6 @@ var server = require("browser-sync");
 var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
-var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
@@ -23,7 +22,7 @@ gulp.task("clean", function() {
 
 gulp.task("copy", function() {
   return gulp.src([
-    "fonts/**/*.{woff, woff2}",
+    "fonts/**/*.{woff,woff2}",
     "img/**",
     "js/**",
     "*.html"
@@ -44,10 +43,7 @@ gulp.task("style", function() {
         "last 2 Firefox versions",
         "last 2 Opera versions",
         "last 2 Edge versions"
-      ]}),
-      mqpacker({
-        sort: true
-      })
+      ]})
     ]))
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
