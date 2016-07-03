@@ -19,11 +19,19 @@
   @include font-size-rem(14px);
   @include line-height(14px, 26px);
 
+  br {
+    display: none;
+  }
+
   @media($w-tablet) {
     margin-top: 73px;
     margin-bottom: 0;
     @include font-size-rem(16px);
     @include line-height(16px, 30px);
+
+    br {
+      display: block;
+    }
   }
 
   @media($w-desktop) {
