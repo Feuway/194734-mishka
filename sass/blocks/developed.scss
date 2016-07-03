@@ -6,10 +6,14 @@
     margin: 0;
   }
 }
-.developed__title {
-  margin-top: 29px;
-  margin-bottom: 33px;
-  margin-right: 25px;
+.developed__logo {
+  display: flex;
+  align-items: center;
+  width: 205px;
+  height: 34px;
+  margin-top: 21px;
+  margin-bottom: 29px;
+  margin-right: -23px;
   color: $color-title;
   font-family: $font-verdana;
   font-weight: bold;
@@ -21,10 +25,6 @@
   &:active {
     opacity: .3;
   }
-}
-.developed__logo {
-  width: 27px;
-  height: 34px;
 
   svg {
     width: 100%;
@@ -37,9 +37,9 @@
     fill: $color-add;
   }
 
-  &:active svg {
-    fill: $color-add;
-    fill-opacity: .3;
+  @media($w-tablet) {
+    margin-top: 14px;
+    margin-bottom: 10px;
   }
 }
 

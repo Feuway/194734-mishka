@@ -1,15 +1,21 @@
 .social {
   display: flex;
   justify-content: space-between;
-  width: 163px;
+  align-items: baseline;
+  width: 141px;
   @include no-list;
   margin-top: 25px;
   margin-bottom: 29px;
+
+  @media($w-tablet) {
+    margin-top: 28px;
+    margin-left: 71px;
+  }
 }
 .social__btn {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 22px;
+  height: 22px;
 
   svg {
     width: 100%;
@@ -24,5 +30,10 @@
   &:active svg {
     fill: $color-add;
     fill-opacity: .3;
+  }
+
+  &--fb {
+    width: 26px;
+    height: 27px;
   }
 }

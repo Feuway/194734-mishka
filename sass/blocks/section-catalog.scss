@@ -4,10 +4,6 @@
   padding: 29px;
   color: #ffffff;
   text-decoration: none;
-  /*border: solid transparent;
-  border-width: 2.5px 0;*/
-
-  /*transition: all .1s linear;*/
   transition: background-color 0.25s ease,
               transform 0.25s ease;
 
@@ -18,7 +14,9 @@
   }
 
   &:hover {
-    transform: translate(0, -5px);
+    @media($w-tablet) {
+      transform: translate(0, -5px);
+    }
   }
 
   &:hover:before {
@@ -88,8 +86,7 @@
       width: 50%;
       position: relative;
       top: 9px;
-      padding: 31px 40px 50px;
-
+      padding: 31px 40px 37px;
   }
 }
 
