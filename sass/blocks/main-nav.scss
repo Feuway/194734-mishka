@@ -30,6 +30,10 @@
 
   &--closed {
     display: none;
+
+    @media($w-tablet) {
+      display: block;
+    }
   }
 }
 .main-nav--left .main-nav__icon {
@@ -45,8 +49,7 @@
   @media($w-tablet) {
     display: flex;
     flex-flow: row;
-    width: 349px;
-
+    width: 350px;
   }
 }
 .main-nav__list-item {

@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="picturefill.min.js" async></script>
   </head>
   <body>
     <div class="svg-wrapper">
@@ -17,7 +22,7 @@
           <picture>
             <source media="(min-width: 1100px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Вязанные корзинки">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Вязанные корзинки">
           </picture>
         </a>
         <button class="main-header__toggle" type="button">Открыть меню</button>
@@ -25,14 +30,14 @@
           <ul class="main-nav__list">
             <li>
               <a class="main-nav__list-item  main-nav__list-item--right" href="#">
-                <svg class="main-nav__icon">
+                <svg class="main-nav__icon" width="20" height="21">
                   <use xlink:href="#icon-search"></use>
                 </svg>
               Поиск по сайту</a>
             </li>
             <li>
               <a class="main-nav__list-item  main-nav__list-item--right" href="#">
-                <svg class="main-nav__icon">
+                <svg class="main-nav__icon" width="20" height="21">
                   <use xlink:href="#icon-cart"></use>
                 </svg>
               Корзина: пока пуста
@@ -73,7 +78,7 @@
                 <picture>
                   <source media="(min-width: 1100px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-                  <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+                  <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" width="260" height="195" alt="Вязанные корзинки">
                 </picture>
               </a>
             </div>
@@ -87,7 +92,7 @@
               <div class="catalog-item__buy">
                 <span class="catalog-item__price">1 200 руб.</span>
                 <a href="#" class="catalog-item__to-cart">
-                  <svg>
+                  <svg width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
                 </a>
@@ -100,7 +105,7 @@
                 <picture>
                   <source media="(min-width: 1100px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-                  <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+                  <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" width="260" height="195" alt="Вязанные корзинки">
                 </picture>
               </a>
             </div>
@@ -114,7 +119,7 @@
               <div class="catalog-item__buy">
                 <span class="catalog-item__price">690 руб.</span>
                 <a href="#" class="catalog-item__to-cart">
-                  <svg>
+                  <svg  width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
                 </a>
@@ -127,7 +132,7 @@
                 <picture>
                   <source media="(min-width: 1100px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-                  <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+                  <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" width="260" height="195" alt="Вязанные корзинки">
                 </picture>
               </a>
             </div>
@@ -141,7 +146,7 @@
               <div class="catalog-item__buy">
                 <span class="catalog-item__price">1500 руб.</span>
                 <a href="#" class="catalog-item__to-cart">
-                  <svg>
+                  <svg width="21" height="18">
                     <use xlink:href="#icon-cart"></use>
                   </svg>
                 </a>
@@ -154,7 +159,7 @@
               <picture>
                   <source media="(min-width: 1100px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-                  <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+                  <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="260" height="150" alt="Вязанные корзинки">
                 </picture>
             </div>
               <h2 class="production__title">Процесс производства</h2>
@@ -167,28 +172,28 @@
     <footer class="main-footer">
       <div class="main-footer__wrap">
         <a class="footer-logo" href="index.html">
-          <svg>
+          <svg width="103" height="34">
             <use xlink:href="#logo-footer"></use>
           </svg>
         </a>
         <ul class="social">
           <li>
             <a class="social__btn" href="#">
-              <svg>
+              <svg width="22" height="22">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="social__btn  social__btn--fb" href="#">
-              <svg>
+              <svg width="26" height="27">
                 <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
           <li>
             <a class="social__btn" href="#">
-              <svg>
+              <svg width="22" height="22">
                 <use xlink:href="#icon-twitter"></use>
               </svg>
             </a>
@@ -196,7 +201,7 @@
         </ul>
         <div class="developed">
           <a class="developed__logo" href="#">Разработано
-            <svg>
+            <svg width="27" height="34">
               <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>

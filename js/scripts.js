@@ -8,3 +8,6 @@ button.addEventListener("click", function(event) {
   menuleft.classList.toggle("main-nav--closed");
   button.classList.toggle("main-header__toggle--closed");
 });
+
+var eventClick = new Event('click');
+button.dispatchEvent(eventClick);
