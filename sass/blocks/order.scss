@@ -143,7 +143,7 @@
   position: absolute;
   top: 11px;
   right: 0;
-  fill-opacity: .2;
+  opacity: .2;
 
   &--phone {
     right: 5px;
@@ -281,10 +281,10 @@
   outline: 0;
   transition: border-color .2s linear;
 
-  &:hover .order__field-icon,
-  &:focus .order__field-icon {
-    fill-opacity: 1;
+  &:hover + .order__field-icon,
+  &:focus + .order__field-icon {
     fill: $color-main;
+    opacity: 1;
   }
 
   &:hover,

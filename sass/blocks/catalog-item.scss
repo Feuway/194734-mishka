@@ -5,6 +5,7 @@
 
   @media($w-tablet) {
     display: flex;
+    width: auto;
     margin-bottom: 54px;
   }
 
@@ -134,18 +135,18 @@
   svg {
     width: 100%;
     height: 100%;
-    fill-opacity: .2;
+    opacity: .2;
     transition: fill .2s;
   }
 
   &:hover svg {
-    fill-opacity: 1;
+    opacity: 1;
     fill: $color-main;
   }
 
   &:active svg {
     fill: $color-main;
-    fill-opacity: .3;
+    opacity: .3;
   }
 }
 .catalog-item__photo a {
