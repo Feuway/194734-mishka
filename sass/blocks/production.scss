@@ -14,8 +14,13 @@
     transition: all .1s ease-out;
   }
 
+  @media($w-tablet) {
+    width: 668px;
+  }
+
   @media($w-desktop) {
     display: block;
+    width: auto;
   }
 }
 .production__title {
